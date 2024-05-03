@@ -483,9 +483,13 @@
 	}
 
 	.advantages-one .row {
-		grid-template-columns: repeat(2, 1fr); 
-		gap: 10px; 
-	  }
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+
+	.advantages-one .item:nth-child(odd):last-child {
+		display: none;
+	}
 
 }
 
@@ -525,9 +529,13 @@
 	}
 
 	.advantages-one .row {
-		grid-template-columns: 1fr; 
-		gap: 5px; 
-	  }
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+
+	.advantages-one .item:nth-child(odd):last-child {
+		display: none;
+	}
 
 	.solutions-two__content-one {
 		padding-left: 15px;
@@ -1159,8 +1167,10 @@
 		display: none;
 	}
 
-	
-
+	.advantages-one .row {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 10px;
+	}
 }
 
 

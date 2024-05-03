@@ -10,11 +10,17 @@
 	display: block;
 	padding: 182px 0 0;
 	z-index: 1;
+	height: 100vh;
 }
 
 .feature-one__inner {
 	position: relative;
 	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+	
 }
 
 .feature-one__title {
@@ -24,6 +30,15 @@
 	color: var(--thm-white);
 	line-height: 58px;
 	margin-bottom: 32px;
+}
+
+.feature-one__subtitle {
+	position: relative;
+	display: block;
+	text-align: center;
+	color: var(--thm-white);
+	margin-bottom: 32px;
+	font-weight: 100;	
 }
 
 .feature-one__title span {

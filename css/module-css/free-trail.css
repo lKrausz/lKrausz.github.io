@@ -8,7 +8,7 @@
 .free-trail {
 	position: relative;
 	display: block;
-	padding: 120px 0 0;
+	padding: 60px 0 0;
 	z-index: 1;
 }
 
@@ -112,6 +112,9 @@
 	height: 40px;
 }
 
+.free-trail p {
+	margin: 0 15px 0;
+}
 
 
 
