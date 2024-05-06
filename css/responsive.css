@@ -1357,11 +1357,15 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.main-menu__wrapper {
-		padding: 0 60px;
+		padding: 0 30px;
 	}
 
 	.main-header__login-sing-up {
 		margin-right: 60px;
+	}
+
+	.main-header-one__logo-box {
+		padding: 10px;
 	}
 }
 
@@ -1375,6 +1379,10 @@
 
 	.main-header__login-sing-up {
 		display: none;
+	}
+
+	.main-header-one__logo-box {
+		padding: 10px;
 	}
 }
 
