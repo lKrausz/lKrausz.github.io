@@ -8,7 +8,7 @@
 .brand-one {
     position: relative;
     display: block;
-    padding: 94px 0 132px;
+    padding: 94px 0 40px;
     z-index: 1;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .brand-one__brand-img img {
-    width: auto;
+    width: 180px;
 }
 
 .brand-one__list-2 {

@@ -37,7 +37,7 @@
     position: relative;
     display: block;
     background-color: var(--thm-main-bg);
-    padding: 48px 30px 42px;
+    padding: 38px 30px 32px;
     border: 1px solid var(--thm-bdr-color);
     border-radius: 16px;
     -webkit-transition: all 500ms ease;
