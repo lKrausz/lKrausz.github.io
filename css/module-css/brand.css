@@ -26,10 +26,12 @@
     text-align: center;
     position: relative;
     display: block;
+    margin-bottom: 10px;
 }
 
 .brand-one__title span {
     color: var(--thm-gradient-color2);
+    font-weight: 500;
 }
 
 .brand-one__brand-list-box {

@@ -59,6 +59,11 @@
 	margin-bottom: 13px;
 }
 
+.footer-widget__logo .reg {
+	height: 100px;
+	width: 100px;
+}
+
 .footer-widget__about-text {
 	font-size: 14px;
 	line-height: 24px;
