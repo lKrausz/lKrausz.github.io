@@ -194,7 +194,7 @@
 		});
 
 		//Menu Toggle Btn
-		$('.mobile-menu .menu-backdrop,.mobile-menu .close-btn').on('click', function () {
+		$('.mobile-menu .menu-backdrop,.mobile-menu .close-btn, .mobile-menu li').on('click', function () {
 			$('body').removeClass('mobile-menu-visible');
 			$('.mobile-menu .navigation > li').removeClass('open');
 			$('.mobile-menu .navigation li ul').slideUp(0);
