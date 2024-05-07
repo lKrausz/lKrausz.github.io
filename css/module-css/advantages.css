@@ -55,7 +55,7 @@
 }
 
 .advantages-one__icon img {
-    width: 60% !important;
+    height: 100px;
     transition: all 500ms linear;
     transition-delay: 0.1s;
     transform: scale(1);

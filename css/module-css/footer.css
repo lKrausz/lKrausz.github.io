@@ -272,5 +272,15 @@
 	color: var(--thm-extra);
 }
 
+.main-footer__icon {
+	text-align: center;
+}
+
+.main-footer__icon img {
+	height: 100px;
+	width: 100px;
+	padding-bottom: 20px;
+}
+
 
 /* End */
