@@ -539,6 +539,14 @@
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
 
+	.brand-one__brand-list-box{
+		padding: 10px 20px;
+	}
+
+	.brand-one__brand-img img {
+		width: 140px;
+	}
+	
 	.top__title {
 		font-size: 2.5vh;
 		line-height: normal;
@@ -1211,6 +1219,15 @@
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 550px) {
+
+	.brand-one__brand-list-box{
+		padding: 10px 10px;
+	}
+
+	.brand-one__brand-img img {
+		width: 100px;
+	}
+
 	.feature-one__list {
 		flex-direction: column;
 	}
