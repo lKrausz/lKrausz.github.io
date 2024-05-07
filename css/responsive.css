@@ -493,7 +493,7 @@
 	}
 
 	.advantages-one .row {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(4, 1fr) !important;
 	}
 
 	.advantages-one .item {
@@ -512,7 +512,7 @@
 		height: 80px;
 	}
 
-	.advantages-one .item:nth-child(odd):first-child {
+	.advantages-one .item:nth-child(odd):first-child:not(.advertizers .item) {
 		display: none;
 	}
 
@@ -596,7 +596,7 @@
 	}
 
 	.advantages-one .row {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 1fr) !important;
 	}
 
 	.advantages-one .item {
@@ -614,7 +614,7 @@
 		height: 90px;
 	}
 
-	.advantages-one .item:nth-child(odd):first-child {
+	.advantages-one .item:nth-child(odd):first-child:not(.advertizers .item) {
 		display: none;
 	}
 
