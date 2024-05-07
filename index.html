@@ -129,6 +129,40 @@
 		</header>
 		<!-- End Main Header -->
 
+		<!-- Join Form Bootstrap -->
+		<div class="modal fade" id="join-modal-id" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="join-modal-title" style="color: black;">Modal title</h5>
+				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+				  <form>
+					<div class="mb-3">
+					  <label for="name" class="form-label">Name</label>
+					  <input type="text" class="form-control" id="name" required>
+					</div>
+					<div class="mb-3">
+						<label for="name" class="form-label">Name of the company</label>
+						<input type="text" class="form-control" id="company" required>
+					  </div>
+					<div class="mb-3">
+					  <label for="email" class="form-label">Email</label>
+					  <input type="email" class="form-control" id="email" required>
+					</div>
+					<div class="mb-3">
+						<label for="name" class="form-label">WhatsApp</label>
+						<input type="text" class="form-control" id="whatsapp" required>
+					  </div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				  </form>
+				</div>
+
+			  </div>
+			</div>
+		  </div>
+		<!-- Join Form Bootstrap -->
 
 		<!-- Feature One Start -->
 		<section id="home" class="top">
@@ -141,18 +175,28 @@
 						<h4 class="top__subtitle">Elevate your web marketing with the best—guarantee exceptional results for your clients with Reg2Dep.</h4>
 						<h3 class="top__signup"><span>SIGNUP</span> NOW</h3>
 						<div class="row justify-content-center">
+							<div class="col-xl-4 top__btn-box">
+								<button   type="button" class="thm-btn top__btn" data-bs-toggle="modal" data-bs-target="#join-modal-id"> <i class="fal fa-plus"></i> Join as
+									advertizer</button>
+							</div>
 					<div class="col-xl-4 top__btn-box">
-						<a href="contact.html" class="thm-btn top__btn"> <i class="fal fa-plus"></i> Join as
-							publisher</a>
-					</div>
-					<div class="col-xl-4 top__btn-box">
-						<a href="contact.html" class="thm-btn top__btn"> <i class="fal fa-plus"></i> Join as
-							advertizer</a>
+						<button   type="button" class="thm-btn top__btn" data-bs-toggle="modal" data-bs-target="#join-modal-id"> <i class="fal fa-plus"></i> Join as
+							advertizer</button>
 					</div>
 				</div>
 				</div>
 			</div>
 		</section>
+
+		<script>
+			const openFormBtn = document.getElementById("open-form-btn");
+			const contactForm = document.getElementById("contact-form");
+		  
+			openFormBtn.addEventListener("click", () => {
+			  contactForm.style.display = contactForm.style.display === "none" ? "flex" : "none";
+			});
+
+		  </script>
 		<!-- Feature One End -->
 
 		<!-- Feature One Start -->
