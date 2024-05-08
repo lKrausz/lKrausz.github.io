@@ -256,8 +256,6 @@
 		height: inherit !important;
 	}
 
-
-
 	.reset-password-page__inner {
 		padding: 75px 95px 100px;
 	}
@@ -265,8 +263,6 @@
 	.reset-password-page__top {
 		margin-bottom: 50px;
 	}
-
-
 
 	.reset-password-page {
 		height: inherit !important;
@@ -492,6 +488,10 @@
 		display: none;
 	}
 
+	.advantages-one .row:not(.advertizers .row) {
+		grid-template-columns: repeat(3, 1fr) !important;
+	}
+
 	.advantages-one .row {
 		grid-template-columns: repeat(4, 1fr) !important;
 	}
@@ -510,10 +510,6 @@
 
 	.advantages-one__icon img {
 		height: 80px;
-	}
-
-	.advantages-one .item:nth-child(odd):first-child:not(.advertizers .item) {
-		display: none;
 	}
 
 	.contacts .row {
@@ -612,10 +608,6 @@
 
 	.advantages-one__icon img {
 		height: 90px;
-	}
-
-	.advantages-one .item:nth-child(odd):first-child:not(.advertizers .item) {
-		display: none;
 	}
 
 	.contacts .row {
@@ -1226,7 +1218,7 @@
 	}
 
 	.advantages-one .row {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		gap: 0px;
 	}
 
@@ -1256,10 +1248,6 @@
 		font-size: 15px;
 	}
 
-	.top__inner {
-		transform: translate(0, -70%); 
-	}
-
 	.top__title {
 		font-size: 3.5vh;
 		line-height: normal;
@@ -1268,6 +1256,7 @@
 	.top__subtitle {
 		font-size: 2vh;
 		line-height: normal;
+		margin-bottom: 25px;
 	}
 
 	.top__signup {

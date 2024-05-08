@@ -15,7 +15,7 @@
 
 .advantages-one .row:not(.advertizers .row) {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 10px;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .advantages-one__single:hover {
-    border: 1px solid #ACDA49;
+    border: 1px solid #FF6C1E;
 }
 
 .advantages-one__icon {
