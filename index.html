@@ -135,7 +135,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="join-modal-title"></h5>
+						<h5 class="modal-title" id="join-modal-title">Join us</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -150,7 +150,8 @@
 							</div>
 							<div class="mb-3">
 								<label for="email" class="form-label">Email</label>
-								<input type="email" class="form-control" id="email" required>
+								<input type="email" class="form-control" id="email" placeholder="example@gmail.com"
+									required>
 							</div>
 							<div class="mb-3">
 								<label for="name" class="form-label">WhatsApp</label>
@@ -178,81 +179,105 @@
 						services.
 						Enjoy multiple deposits per user, with zero cost to you – we handle it all.
 						Your users will keep boosting your profits for years.
-						</h4>
-						<h4 class="top__subtitle"> <span>Start leveraging your high-quality audience to build a lasting profit stream today!</span></h4>
-					<section class="advantages-one">
-						<div class="container">
+					</h4>
+					<h4 class="top__subtitle"> <span>Start leveraging your high-quality audience to build a lasting
+							profit stream today!</span></h4>
 
-							<div class="row">
-								<div class="item">
-									<div class="advantages-one__single">
-										<div class="advantages-one__icon">
-											<img src="images/icons/4+ FTD per Player 1.png" alt="">
-										</div>
-										<h4 class="advantages-one__title">5+ FTDs per Player</h4>
+					<div class="container advantages-one">
+						<div class="row">
+							<div class="item">
+								<div class="advantages-one__single">
+									<div class="advantages-one__icon">
+										<img src="images/icons/4+ FTD per Player 1.png" alt="">
 									</div>
+									<h4 class="advantages-one__title">5+ FTDs per Player</h4>
 								</div>
-								<div class="item">
-									<div class="advantages-one__single">
-										<div class="advantages-one__icon">
-											<img src="images/icons/AI-Driven Marketing 1.png" alt="">
-										</div>
-										<h4 class="advantages-one__title">AI-Driven Marketing</h4>
+							</div>
+							<div class="item">
+								<div class="advantages-one__single">
+									<div class="advantages-one__icon">
+										<img src="images/icons/AI-Driven Marketing 1.png" alt="">
 									</div>
+									<h4 class="advantages-one__title">AI-Driven Marketing</h4>
 								</div>
-								<div class="item">
-									<div class="advantages-one__single">
-										<div class="advantages-one__icon">
-											<img src="images/icons/Passive Income for Publisher 1.png" alt="">
-										</div>
-										<h4 class="advantages-one__title">Passive Income for Publishers</h4>
+							</div>
+							<div class="item">
+								<div class="advantages-one__single">
+									<div class="advantages-one__icon">
+										<img src="images/icons/Passive Income for Publisher 1.png" alt="">
 									</div>
+									<h4 class="advantages-one__title">Passive Income for Publishers</h4>
 								</div>
-								<div class="item">
-									<div class="advantages-one__single">
-										<div class="advantages-one__icon">
-											<img src="images/icons/The Highest HYBRID Rates 1.png" alt="">
-										</div>
-										<h4 class="advantages-one__title">Highest Hybrid Rates</h4>
+							</div>
+							<div class="item">
+								<div class="advantages-one__single">
+									<div class="advantages-one__icon">
+										<img src="images/icons/The Highest HYBRID Rates 1.png" alt="">
 									</div>
+									<h4 class="advantages-one__title">Highest Hybrid Rates</h4>
 								</div>
-								<div class="item">
-									<div class="advantages-one__single">
-										<div class="advantages-one__icon">
-											<img src="images/icons/Human B2B Contact 1.png" alt="">
-										</div>
-										<h4 class="advantages-one__title">Human B2B Contact</h4>
+							</div>
+							<div class="item">
+								<div class="advantages-one__single">
+									<div class="advantages-one__icon">
+										<img src="images/icons/Human B2B Contact 1.png" alt="">
 									</div>
+									<h4 class="advantages-one__title">Human B2B Contact</h4>
 								</div>
-								<div class="item">
-									<div class="advantages-one__single">
-										<div class="advantages-one__icon">
-											<img src="images/icons/Auto Retention Mechanism 1.png" alt="">
-										</div>
-										<h4 class="advantages-one__title">Auto Retention Mechanism</h4>
+							</div>
+							<div class="item">
+								<div class="advantages-one__single">
+									<div class="advantages-one__icon">
+										<img src="images/icons/Auto Retention Mechanism 1.png" alt="">
 									</div>
+									<h4 class="advantages-one__title">Auto Retention Mechanism</h4>
 								</div>
 							</div>
 						</div>
-					</section>
+					</div>
+
 					<h3 class="top__signup"><span>SIGNUP</span> NOW</h3>
 					<div class="row justify-content-center">
 						<div class="col-xl-4 top__btn-box">
-							<button type="button" class="thm-btn top__btn publisher-button" data-bs-toggle="modal"
+							<button type="button" class="thm-btn top__btn" id="publisher-button" data-bs-toggle="modal"
 								data-bs-target="#join-modal-id"> <i class="fal fa-plus"></i> Join as
 								publisher</button>
 						</div>
 						<div class="col-xl-4 top__btn-box">
-							<button type="button" class="thm-btn top__btn advertizer-button" data-bs-toggle="modal"
+							<button type="button" onclick="changeTitle('str')"
+								class="thm-btn top__btn" id="advertizer-button" data-bs-toggle="modal"
 								data-bs-target="#join-modal-id"> <i class="fal fa-plus"></i> Join as
 								advertizer</button>
 						</div>
-						
-						
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<script>
+
+			window.addEventListener("DOMContentLoaded", function () {
+				var advButton = document.getElementById("advertizer-button");
+				var pubButton = document.getElementById("publisher-button");
+
+				var modals = document.getElementsByClassName("modal-title");
+
+				advButton.addEventListener("click", function () {
+					changeVal("Join As Advertizer");
+				});
+
+				pubButton.addEventListener("click", function () {
+					changeVal("Join As Publisher");
+				});
+
+				function changeVal(val) {
+					for (var i = 0; i < modals.length; i++) {
+						modals[i].textContent = val;
+					}
+				}
+			});
+
+		</script>
 
 		<!-- Feature One End -->
 
