@@ -1205,6 +1205,10 @@
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 550px) {
 
+	#join-modal-id .modal-dialog  {
+		width: 300px;
+	}
+
 	.brand-one__brand-list-box{
 		padding: 10px 10px;
 	}
