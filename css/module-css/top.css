@@ -51,7 +51,7 @@
 	margin-bottom: 32px;
 }
 
-.top__title span, .top__signup span {
+.top__title span, .top__signup span, .top__subtitle span {
 	color: var(--thm-base);
 }
 
