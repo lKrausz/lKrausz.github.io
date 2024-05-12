@@ -1,4 +1,3 @@
-
 <?php
 
 $name = $_POST["name"];
@@ -10,7 +9,7 @@ $subject = "Отправка формы - Контакт с сайта";
 $toEmail = "krausz.st@gmail.com";
 
 
-$mailHeaders = "From: Website Contact Form <krausz.st@gmail.com>\r\n";
+$mailHeaders = "From: Website Contact Form \r\n";
 $mailHeaders .= "Reply-To: $email\r\n"; 
 $mailHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
