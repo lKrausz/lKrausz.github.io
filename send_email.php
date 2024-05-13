@@ -16,10 +16,11 @@ $mailHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 
 $message = "Имя: $name\n";
+$message .= "Role: $role\n";
 $message .= "Email: $email\n";
 $message .= "Компания: $company\n";
 $message .= "WhatsApp: $whatsapp\n";
-$message .= "role: $role\n";
+
 
 if (mail($toEmail, $subject, $message, $mailHeaders)) {
   echo "Email sent successfully!";
