@@ -142,6 +142,9 @@
 					<div class="modal-body">
 						<form action="send_email.php" method="post">
 							<div class="mb-3">
+								<input type="hidden" class="form-control" id="role" value="" disabled>
+							</div>
+							<div class="mb-3">
 								<label for="name" class="form-label">Name</label>
 								<input type="text" class="form-control" id="name" required>
 							</div>
@@ -265,16 +268,22 @@
 
 				advButton.addEventListener("click", function () {
 					changeVal("Join As Advertizer");
+					changeInputVal("Join As Advertizer");
 				});
 
 				pubButton.addEventListener("click", function () {
 					changeVal("Join As Publisher");
+					changeInputVal("Join As Publisher");
 				});
 
 				function changeVal(val) {
 					for (var i = 0; i < modals.length; i++) {
 						modals[i].textContent = val;
 					}
+				}
+
+				function changeInputVal(val) {
+					document.getElementById("role").value = val
 				}
 			});
 

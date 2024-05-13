@@ -4,6 +4,7 @@ $name = $_POST["name"];
 $email = $_POST["email"];
 $company = $_POST["company"];
 $whatsapp = $_POST["whatsapp"];
+$role = $_POST["role"];
 
 $subject = "Отправка формы - Контакт с сайта";
 $toEmail = "krausz.st@gmail.com";
@@ -18,11 +19,13 @@ $message = "Имя: $name\n";
 $message .= "Email: $email\n";
 $message .= "Компания: $company\n";
 $message .= "WhatsApp: $whatsapp\n";
+$message .= "role: $role\n";
 
 if (mail($toEmail, $subject, $message, $mailHeaders)) {
   echo "Email sent successfully!";
 } else {
-  echo "Error sending email.";
+  $error = error_get_last();
+  echo "Error sending email: " . $error['message'];
 }
 
 ?>
