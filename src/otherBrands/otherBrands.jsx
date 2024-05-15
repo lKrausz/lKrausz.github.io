@@ -40,6 +40,10 @@ function OtherBrands({
         shuffledArray[i],
       ];
     }
+    //Обрезка массива до трех элементов, чтобы было по шаблону
+    if (shuffledArray.length > 3) {
+        return shuffledArray.slice(0,3);
+    }
     return shuffledArray;
   }
 
