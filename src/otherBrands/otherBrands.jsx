@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import cmn1 from "../../public/cmn1.png";
 import play from "../../public/play.png";
-import image from "../../../src/card.png";
+import card from "../../src/card.png";
 
 function OtherBrands({
   newUrl,
@@ -124,7 +124,7 @@ function OtherBrands({
              <div class="col-xl-4 col-lg-0">
                     <div class="pricing-content">
                         <div class="image">
-                        <img src={`.${image}`} alt={`.${image}`} />
+                        <img src={`.${card}`} alt={`.${card}`} />
                         </div>
                         <div class="section-title">
                             <h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><span class="common-gre-color">{t("Enchanted Offers")}</span></h1>
