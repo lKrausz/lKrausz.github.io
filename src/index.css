@@ -214,13 +214,13 @@ img{
     border: none;
     background: var(--gradient);
     overflow: hidden;
-    box-shadow: 1px 1px 20px 0px rgb(255 200 39 / 40%), 1px 1px 15px 0px rgb(255 82 1 / 20%);
+    box-shadow: var(--btn-shadow);
 }
 
 .main-btn:hover {
     color: #fff;
     background: var(--gradient);
-    box-shadow: 1px 1px 300px 0px rgb(255 200 39 / 40%), 1px 1px 30px 0px rgb(255 82 1 / 20%);
+    box-shadow: var(--btn-shadow-hover);
 }
 
 .main-btn.border-btn {
@@ -246,13 +246,13 @@ img{
     transition: all .4s ease-in-out;
     border: none;
     background: var(--gradient);
-    box-shadow: 1px 1px 20px 0px rgb(255 200 39 / 40%), 1px 1px 15px 0px rgb(255 82 1 / 20%);
+    box-shadow: var(--btn-shadow);
 }
 
 .play-btn:hover {
     color: #fff;
     background: var(--gradient);
-    box-shadow: 1px 1px 300px 0px rgb(255 200 39 / 40%), 1px 1px 30px 0px rgb(255 82 1 / 20%);
+    box-shadow: var(--btn-shadow-hover);
 
 }
 
@@ -972,12 +972,12 @@ img{
     padding: 35px;
     border-radius: 10px;
     margin-bottom: 30px;
-    box-shadow: inset 1px 1px 15px 0px rgb(255 200 39 / 40%), inset 1px 1px 15px 0px rgb(255 82 1 / 20%);
+    box-shadow: inset var(--box-shadow-game);
     transition: all .3s ease-out 0s;
 }
 
 .game-section .single-game:hover{
-    box-shadow: inset 1px 1px 30px 0px rgba(250, 194, 24, 0.4), inset 1px 1px 30px 0px rgba(246, 93, 21, 0.2);
+    box-shadow: inset var(--box-shadow-game-hover);
 }
 
 .game-section .single-game .gmae-content h3 {
@@ -3977,16 +3977,20 @@ a {
   --gradient: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
   --box-shadow: 1px 1px 15px 0px rgba(255, 201, 39, 0.513), 1px 1px 15px 0px rgba(255, 81, 1, 0.39);
   --border: 1px solid rgba(255, 115, 0, 0.144); */
-    --background-color: #13081d;
-    --font-white: #fff;
-    --font-orange: #21ff19;
-    --pragraph-color: #d4d4d4;
+   
+  --background-color: #13081d;
+  --font-white: #fff;
+  --font-orange: #21ff19;
+  --pragraph-color: #d4d4d4;
   
     
-    --background-gradient: linear-gradient(180deg, #13081d, #13081d, #28123d);
-    --gradient: linear-gradient(0deg, #59c921 40%, #264d0c 110%);
-    --box-shadow: 1px 1px 15px 0px rgba(161, 255, 39, 0.513), 1px 1px 15px 0px rgba(103, 255, 1, 0.39);
-    --border: 1px solid rgba(9, 255, 0, 0.144);
+  --background-gradient: linear-gradient(180deg, #13081d, #13081d, #28123d);
+  --gradient: linear-gradient(0deg, #59c921 40%, #264d0c 110%);
+  --box-shadow-game: 1px 1px 15px 0px rgba(161, 255, 39, 0.513), 1px 1px 15px 0px rgba(103, 255, 1, 0.39);
+  --box-shadow-game-hover: 1px 1px 30px 0px rgba(145, 255, 0, 0.513), 1px 1px 30px 0px rgba(22, 255, 1, 0.39);
+  --btn-shadow: 1px 1px 20px 0px rgba(89, 255, 39, 0.4), 1px 1px 15px 0px rgba(60, 255, 1, 0.2);
+  --btn-shadow-hover: 1px 1px 30px 0px rgb(89, 255, 39, 0.4), 1px 1px 30px 0px rgb(60, 255, 1, 0.2);
+  --border: 1px solid rgba(9, 255, 0, 0.144);
 }
 
 /*Abstracts / variables*/
