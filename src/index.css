@@ -18,8 +18,8 @@
 ====================================================================
 ***/
 :root {
-  --theme-color: #f8af08;
-  --base-color: #f8af08;
+  /* --theme-color: #f8af08;
+  --base-color: #f8af08; */
   --header-color: #ffffff;
   --banner-color: #35082b;
   --box-bg: #521848;
@@ -31,7 +31,7 @@
   --black-theme: #151515;
   --black-color: #000000;
   --calender: #191d23;
-  --ratting-color: #e4a853;
+  /* --ratting-color: #e4a853; */
   /* --pragraph-color: #666666; */
   --border: #8a5f31;
   --border-two: #a09fc8;
@@ -54,8 +54,11 @@
   --radial: radial-gradient(#28123d, #13081d, #13081d);
   --font-white: #fff;
   --second-color: #21ff19;
-  --darker-second-color: #083106;
+  --darker-second-color: #064d03;
   --pragraph-color: #d4d4d4;
+  --theme-color: #083106;
+  --base-color: #083106;
+  --ratting-color: #363a35;
  
   
     
@@ -1732,7 +1735,7 @@ header .container .relative {
   margin-bottom: 20px;
 }
 .select-brand select {
-  background-color: #0593ed;
+  background-color: var(--darker-second-color);
   border: none;
   color: #fff;
   /* background: linear-gradient(to top, #fdf0ea 50%, transparent 50%); */
@@ -2317,7 +2320,7 @@ figure {
 }
 #countrySelect option {
   color: #fff !important;
-  background-color: var(--second-color);
+  background-color: var(--darker-second-color);
 }
 .tickets {
   position: relative;
