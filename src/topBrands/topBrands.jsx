@@ -157,51 +157,52 @@ function TopBrands({
 
   return (
     <div className="mtt10">
-      {isLoading && <Loader />}
-      <section id="game" class="game-section pt-95 pb-95">
-           <div class="container">
-             <div class="row justify-content-center">
-               <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-10">
-                 <div class="section-title text-center right-greadient mb-50">
-                   <h1 class="mb-25">{t("New")}</h1>
-                 </div>
-               </div>
-             </div>
-             <div class="row">
-             {data.map((rowData, index) => (
-                   <div class="col-xl-3 col-md-6" key={index}>
-                     <div class="single-game box-inner-shadow">
-                       <div className="game_thumb">
-                         <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
-   
-                         <p class="mb-15">{rowData["OurOfferContent"]}</p>
-   
-                         <div className="game__overlay">
-                           <a class="play-btn btn-hover" href={
-                                     rowData["GoBig"] +
-                                     newUrl +
-                                     "L_enchanted-forest_1"
-                                   }>
-                             Play Now!
-                           </a>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 )
-               )}
-             </div>
-             <div class="view-all-btn text-center pt-30">
-               <a
-                 target="_blank"
-                  href={`https://pickbonus.myawardwallet.com/${newUrl}L_enchanted-forest_1`}
-                 className="main-btn btn-hover"
-               >
-                 <span>{t("Show all")}</span>
-               </a>
-             </div>
-           </div>
-         </section>
+      {data.length > 0 && (
+        <section id="game" class="game-section pt-95 pb-95">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-10">
+                <div class="section-title text-center right-greadient mb-50">
+                  <h1 class="mb-25">{t("New")}</h1>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              {data.map((rowData, index) => (
+                <div class="col-xl-3 col-md-6" key={index}>
+                  <div class="single-game box-inner-shadow">
+                    <div className="game_thumb">
+                      <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
+
+                      <p class="mb-15">{rowData["OurOfferContent"]}</p>
+
+                      <div className="game__overlay">
+                        <a class="play-btn btn-hover" href={
+                          rowData["GoBig"] +
+                          newUrl +
+                          "L_enchanted-forest_1"
+                        }>
+                          Play Now!
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )
+              )}
+            </div>
+            <div class="view-all-btn text-center pt-30">
+              <a
+                target="_blank"
+                href={`https://pickbonus.myawardwallet.com/${newUrl}L_enchanted-forest_1`}
+                className="main-btn btn-hover"
+              >
+                <span>{t("Show all")}</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
     </div>
   );
 }

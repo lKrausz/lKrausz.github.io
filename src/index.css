@@ -184,7 +184,7 @@ img{
 
 .common-gre-color{
     font-size: 50px !important;
-    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -212,14 +212,14 @@ img{
     z-index: 5;
     transition: all .4s ease-in-out;
     border: none;
-    background: linear-gradient(85deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     overflow: hidden;
     box-shadow: 1px 1px 20px 0px rgb(255 200 39 / 40%), 1px 1px 15px 0px rgb(255 82 1 / 20%);
 }
 
 .main-btn:hover {
     color: #fff;
-    background: linear-gradient(1705deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     box-shadow: 1px 1px 300px 0px rgb(255 200 39 / 40%), 1px 1px 30px 0px rgb(255 82 1 / 20%);
 }
 
@@ -245,13 +245,13 @@ img{
     z-index: 5;
     transition: all .4s ease-in-out;
     border: none;
-    background: linear-gradient(85deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     box-shadow: 1px 1px 20px 0px rgb(255 200 39 / 40%), 1px 1px 15px 0px rgb(255 82 1 / 20%);
 }
 
 .play-btn:hover {
     color: #fff;
-    background: linear-gradient(1705deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     box-shadow: 1px 1px 300px 0px rgb(255 200 39 / 40%), 1px 1px 30px 0px rgb(255 82 1 / 20%);
 
 }
@@ -288,7 +288,7 @@ img{
 .scroll-top {
     width: 45px;
     height: 45px;
-    background: linear-gradient(85deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     box-shadow: 1px 1px 20px 0px rgb(255 200 39 / 40%), 1px 1px 15px 0px rgb(255 82 1 / 20%);   
     display: none;
     justify-content: center;
@@ -306,7 +306,7 @@ img{
 
 .scroll-top:hover {
     color: #fff;
-    background: linear-gradient(1705deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     box-shadow: 1px 1px 300px 0px rgb(255 200 39 / 40%), 1px 1px 30px 0px rgb(255 82 1 / 20%);
 }
 
@@ -575,7 +575,7 @@ img{
     left: auto;
     width: 0;
     height: 2px;
-    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     z-index: -1;
     opacity: 0;
     border-radius: 10px;
@@ -584,7 +584,7 @@ img{
 
 .navbar-nav .nav-item a:hover,
 .navbar-nav .nav-item a.active {
-    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -707,7 +707,7 @@ img{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 30px;
     font-weight: 800;
-    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -772,7 +772,7 @@ img{
 }
   
 .how-item-thumb .badge{
-    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
 }
 
 .how-item::before {
@@ -847,7 +847,7 @@ img{
 }
 
 .about-section .single-counter .countup{
-    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -893,7 +893,7 @@ img{
 
 .today-item .amount {
     position: absolute;
-    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     padding: 0px 10px;
     border-radius: 20px;
     font-size: 13px;
@@ -907,7 +907,7 @@ img{
 .today-title{
     text-align: center;
     font-size: 30px;
-    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -942,7 +942,7 @@ img{
     top: 50%;
     transform: translateY(-50%);
     transition: all .3s ease-out 0s;
-    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -957,7 +957,7 @@ img{
 }
 
 .faq-section .accordion .text-start.collapsed{
-    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1016,7 +1016,7 @@ img{
 .team-section .single-team .content h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1062,7 +1062,7 @@ img{
     width: 60px;
     height: 45px;
     border-radius: 30px;
-    background: linear-gradient(85deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     overflow: hidden;
     box-shadow: 1px 1px 20px 0px rgb(255 200 39 / 40%), 1px 1px 15px 0px rgb(255 82 1 / 20%);
     color: #ffffff;
@@ -1073,7 +1073,7 @@ img{
 
 .pricing-section .pricing-active-wrapper .tns-controls button:hover {
     color: #fff;
-    background: linear-gradient(1705deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     box-shadow: 1px 1px 300px 0px rgb(255 200 39 / 40%), 1px 1px 30px 0px rgb(255 82 1 / 20%);
 }
 
@@ -1118,7 +1118,7 @@ img{
 
 .pricing-section .pricing-active-wrapper .pricing-active .single-pricing .price-header .price {
     font-size: 30px;
-    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1157,7 +1157,7 @@ img{
 .testimonial-section .testimonial-active-wrapper .tns-nav button {
     text-indent: -9999px;
     border: none;
-    background: linear-gradient(1705deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     box-shadow: 1px 1px 300px 0px rgb(255 200 39 / 40%), 1px 1px 30px 0px rgb(255 82 1 / 20%);
     width: 12px;
     height: 12px;
@@ -1188,7 +1188,7 @@ img{
 }
 
 .testimonial-section .testimonial-active-wrapper .single-testimonial .testimonial-con-all .info h4{
-    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1263,7 +1263,7 @@ img{
 }
 
 .footer .widget-wrapper ul li a:hover {
-    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1990,13 +1990,13 @@ header .container .relative {
   border-radius: 15px;
 }
 .ti {
-  color: rgba(21, 20, 61, 0.15);
-  font-size: 50px;
+  color: rgba(223, 148, 10, 0.15);
+  font-size: 40px;
   font-weight: 700;
-  line-height: 104%;
+  /* line-height: 104%; */
   font-family: "Bebas Neue", sans-serif;
   margin: 0 auto !important;
-  min-height: 44vh;
+  /* min-height: 44vh; */
 }
 .all-brands .one-brand {
   flex-basis: 20%;
@@ -3967,7 +3967,7 @@ a {
   --modal-bg: #55184b;
 
   /* Gden colors*/
-  --background-color: #13081d;
+  /* --background-color: #13081d;
   --font-white: #fff;
   --font-orange: #ff9c19;
   --pragraph-color: #d4d4d4;
@@ -3976,7 +3976,17 @@ a {
   --background-gradient: linear-gradient(180deg, #13081d, #13081d, #28123d);
   --gradient: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
   --box-shadow: 1px 1px 15px 0px rgba(255, 201, 39, 0.513), 1px 1px 15px 0px rgba(255, 81, 1, 0.39);
-  --border: 1px solid rgba(255, 115, 0, 0.144);
+  --border: 1px solid rgba(255, 115, 0, 0.144); */
+    --background-color: #13081d;
+    --font-white: #fff;
+    --font-orange: #21ff19;
+    --pragraph-color: #d4d4d4;
+  
+    
+    --background-gradient: linear-gradient(180deg, #13081d, #13081d, #28123d);
+    --gradient: linear-gradient(0deg, #59c921 40%, #264d0c 110%);
+    --box-shadow: 1px 1px 15px 0px rgba(161, 255, 39, 0.513), 1px 1px 15px 0px rgba(103, 255, 1, 0.39);
+    --border: 1px solid rgba(9, 255, 0, 0.144);
 }
 
 /*Abstracts / variables*/

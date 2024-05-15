@@ -47,7 +47,6 @@ function App() {
                 {/* TODO: change path to other side page  */}
 
                 {/* <Route index path="/fortunewheel" element={<Wheel />} /> */}
-                
                 <Route index path="/withdrawal" element={<Withdraw />} />
                 <Route index path="/unsubscribed" element={<Unsubscribed />} />
 
