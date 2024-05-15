@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import shape from "../../../public/bg-shape.png";
 import bs from "../../../public/banner-shape.png";
 import bt from "../../../public/banner-thumb.png";
+import image from "../../../src/joker.png";
 
 
 
@@ -142,7 +143,7 @@ function AnotherBrands({
             </div>
             <div class="col-lg-6">
                 <div class="hero-img wow fadeInRight" data-wow-delay=".5s">
-                <img src="src/joker.png" alt="Price"/>
+                <img src={`.${image}`} alt={`.${image}`} />
                 </div>
             </div>
         </div>
