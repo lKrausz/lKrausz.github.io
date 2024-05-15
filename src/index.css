@@ -41,7 +41,7 @@
 
   /* --background-color: #13081d;
   --font-white: #fff;
-  --font-orange: #ff9c19;
+  --second-color: #ff9c19;
   --pragraph-color: #d4d4d4;
 
   
@@ -53,12 +53,15 @@
   --background-color: #13081d;
   --radial: radial-gradient(#28123d, #13081d, #13081d);
   --font-white: #fff;
-  --font-orange: #21ff19;
+  --second-color: #21ff19;
+  --darker-second-color: #083106;
   --pragraph-color: #d4d4d4;
+ 
   
     
   --background-gradient: linear-gradient(180deg, #13081d, #13081d, #28123d);
   --gradient: linear-gradient(0deg, #59c921 40%, #264d0c 110%);
+  --box-shadow: 1px 1px 15px 0px rgba(161, 255, 39, 0.513), 1px 1px 15px 0px rgba(103, 255, 1, 0.39);
   --box-shadow-game: 1px 1px 15px 0px rgba(161, 255, 39, 0.513), 1px 1px 15px 0px rgba(103, 255, 1, 0.39);
   --box-shadow-game-hover: 1px 1px 30px 0px rgba(145, 255, 0, 0.513), 1px 1px 30px 0px rgba(22, 255, 1, 0.39);
   --btn-shadow: 1px 1px 20px 0px rgba(89, 255, 39, 0.4), 1px 1px 15px 0px rgba(60, 255, 1, 0.2);
@@ -1400,7 +1403,7 @@ header * {
   color: var(--font-white) !important;
 }
 .tickets span {
-  color: var(--font-orange) !important;
+  color: var(--second-color) !important;
 }
 footer .wrapper .container {
   margin-top: 0;
@@ -2314,6 +2317,7 @@ figure {
 }
 #countrySelect option {
   color: #fff !important;
+  background-color: var(--second-color);
 }
 .tickets {
   position: relative;
