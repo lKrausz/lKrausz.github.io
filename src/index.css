@@ -678,6 +678,10 @@ img{
     right: -300px;
 }
 
+.hero-img img {
+  width: 100%;
+}
+
 .how-item{
     position: relative;
 }
