@@ -1,10 +1,6 @@
 /*Goole Font Use*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
-
-/*Emoji*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
-
 /*** 
 ====================================================================
 	Css Files
@@ -99,18 +95,6 @@
 
 .box-inner-shadow{
   background: var(--background-color);
-}
-
-/*** 
-====================================================================
-	Emoji class
-====================================================================
-***/
-
-.noto-color-emoji-regular {
-  font-family: "Noto Color Emoji", sans-serif;
-  font-weight: 600;
-  font-style: normal;
 }
 
 /*** 

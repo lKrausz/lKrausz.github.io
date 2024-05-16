@@ -51,7 +51,7 @@ function LanguageSelector({ ipDataCode, source }) {
         </select>
       )} */}
       {source !== "partner1043" && (
-        <select class="noto-color-emoji-regular" value={i18n.language} onChange={changeLanguage}>
+        <select value={i18n.language} onChange={changeLanguage}>
           {languageOptions.map((option) => (
             <option key={option.value} value={option.value}>
               {option.label}
