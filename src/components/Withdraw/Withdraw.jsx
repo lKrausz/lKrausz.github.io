@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../dataBrands/Header";
+import Footer from "../dataBrands/Footer";
 import LoaderMini from "../LoaderMini/LoaderMini";
 import { use } from "i18next";
-import logo from "../../../src/img/logo.png";
-import plus from "../../../src/img/18plus.png";
-import layer from "../../../src/img/layer.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Select from "react-select";
@@ -647,31 +645,7 @@ export function Withdraw() {
           </div>
         </div>
       </div>
-      <footer>
-        <div className="wrapper">
-          <div className="container flex-column">
-            <div className="top-footer">
-              <img className="logo" src={`.${logo}`} />
-              <div className="all-menu">
-                <Link to={`/terms`}>{t("terms")}</Link>
-              </div>
-            </div>
-            <div className="center-footer">
-              <div className="images">
-                <img src={`.${plus}`} alt="" />
-                {/* <img src={`.${gamblers}`} alt="" /> */}
-                <img src={`.${layer}`} alt="" />
-                {/* <img src={`.${softswiss}`} alt="" /> */}
-              </div>
-
-              <p>{t("footerText")}</p>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="bottom-footer">{t("copyright")}</div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

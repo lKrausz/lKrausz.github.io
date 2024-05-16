@@ -1,8 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Header from "../../../03.12.24/src/dataBrands/Header";
-import logo from "../../../src/logo.png";
-import plus from "../../../src/18plus.png";
-import layer from "../../../src/layer.png";
+import Footer from "../dataBrands/Footer";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import AnotherBrands2 from "../../../03.12.24/src/components/AnotherBrands2/AnotherBrands2";
@@ -268,31 +266,7 @@ const Wheel = () => {
         ></iframe>
       </div>
 
-      <footer>
-        <div className="wrapper">
-          <div className="container flex-column">
-            <div className="top-footer">
-              <img className="logo" src={`.${logo}`} />
-              <div className="all-menu">
-                <Link to={`/terms`}>{t("terms")}</Link>
-              </div>
-            </div>
-            <div className="center-footer">
-              <div className="images">
-                <img src={`.${plus}`} alt="" />
-                {/* <img src={`.${gamblers}`} alt="" /> */}
-                <img src={`.${layer}`} alt="" />
-                {/* <img src={`.${softswiss}`} alt="" /> */}
-              </div>
-
-              <p>{t("footerText")}</p>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="bottom-footer">{t("copyright")}</div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

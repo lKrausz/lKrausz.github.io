@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import shape from "../../../public/bg-shape.png";
-import bs from "../../../public/banner-shape.png";
-import bt from "../../../public/banner-thumb.png";
 import image from "../../../src/img/joker2.png";
 
 
