@@ -565,7 +565,7 @@ img{
     top: 20px;
     width: 400px;
     height: 320px;
-    background: url(../img/hero/hero-bg-02.png) center;
+    background: url(../src/hero-bg-02.png) center;
     background-repeat: no-repeat;
 }
 
@@ -576,7 +576,7 @@ img{
     bottom: 0;
     width: 319px;
     height: 321px;
-    background: url(../img/hero/hero-bg-03.png) center;
+    background: url(../src/hero-bg-03.png) center;
     background-repeat: no-repeat;
 }
 
