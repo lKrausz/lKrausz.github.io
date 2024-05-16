@@ -1,9 +1,5 @@
 @media (min-width: 1260px) and (max-width: 5000px) {
 
-  .other-brands-section .row .row .col-md-4:last-child {
-    display: none;
-  }
-
   .other-brands-section .other-brands-content .image {
     position: absolute;
     top: 50%;
@@ -985,9 +981,6 @@
     font-size: 14px;
     padding: 8px 20px 8px;
   }
-  .other-brands-section .row .row .col-md-4:last-child {
-    display: none;
-  }
   
 }
 
@@ -1545,6 +1538,10 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .other-brands-section .row .row .col-md-4:last-child {
+    display: none;
+  }
+
   .faq__section .section-header h2 {
     margin-top: -1px;
   }
@@ -2080,9 +2077,7 @@
   .right-greadient::before {
     display: none;
   }
-}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-nav .nav-item .sub-menu {
     position: relative;
     width: 100%;
@@ -2105,10 +2100,6 @@
   }
 
   .hero-section .hero-shape .shape.shape-1 {
-    display: none;
-  }
-
-  .other-brands-section .row .row .col-md-4:last-child {
     display: none;
   }
 
