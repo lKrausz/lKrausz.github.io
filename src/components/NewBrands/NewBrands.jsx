@@ -7,26 +7,26 @@ import Loader from "../Loader/Loader";
 
 // import all from "../../all.png";
 
-import allEn from "../../all_en.png";
-import allPl from "../../all_pl.png";
-import allEs from "../../all_es.png";
-import allAll from "../../all_all.png";
-import allBe from "../../all_be.png";
-import allBg from "../../all_bg.png";
-import allCz from "../../all_cz.png";
-import allDe from "../../all_de.png";
-import allDk from "../../all_dk.png";
-import allFi from "../../all_fi.png";
-import allFr from "../../all_fr.png";
-import allGr from "../../all_gr.png";
-import allHu from "../../all_hu.png";
-import allIt from "../../all_it.png";
-import allNl from "../../all_nl.png";
-import allNo from "../../all_no.png";
-import allPt from "../../all_pt.png";
-import allSe from "../../all_se.png";
-import allSk from "../../all_sk.png";
-import allTr from "../../all_tr.png";
+import allEn from "../../All_top/all_en.png";
+import allPl from "../../All_top/all_pl.png";
+import allEs from "../../All_top/all_es.png";
+import allAll from "../../All_top/all_all.png";
+import allBe from "../../All_top/all_be.png";
+import allBg from "../../All_top/all_bg.png";
+import allCz from "../../All_top/all_cz.png";
+import allDe from "../../All_top/all_de.png";
+import allDk from "../../All_top/all_dk.png";
+import allFi from "../../All_top/all_fi.png";
+import allFr from "../../All_top/all_fr.png";
+import allGr from "../../All_top/all_gr.png";
+import allHu from "../../All_top/all_hu.png";
+import allIt from "../../All_top/all_it.png";
+import allNl from "../../All_top/all_nl.png";
+import allNo from "../../All_top/all_no.png";
+import allPt from "../../All_top/all_pt.png";
+import allSe from "../../All_top/all_se.png";
+import allSk from "../../All_top/all_sk.png";
+import allTr from "../../All_top/all_tr.png";
 
 function NewBrands({
   newUrl,
