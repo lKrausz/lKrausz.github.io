@@ -3,11 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useTranslation } from "react-i18next";
-import Loader from "../components/Loader/Loader";
+import Loader from "../Loader/Loader";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import gm1 from "../../public/gm1.png";
-import play from "../../public/play.png";
 
 function TopBrands({
   newUrl,

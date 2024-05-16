@@ -1,13 +1,13 @@
 import { useEffect, useState, useRef } from "react";
-import logo from "../../src/logo2.png";
-import arrow from "../../src/arrow-down.png";
+import logo from "../../../src/img/logo2.png";
+import arrow from "../../../src/img/arrow-down.png";
 import { Link } from "react-router-dom";
-import Loader from "../../src/components/Loader/Loader";
+import Loader from "../Loader/Loader";
 import LanguageSelector from "../LanguageSelector";
 import LanguageSelectorMobile from "../LanguageSelectorMobile";
-import profile from "../prof.svg";
-import wallet from "../wallet.svg";
-import dollar from "../dollar.svg";
+import profile from "../../img/prof.svg";
+import wallet from "../../img/wallet.svg";
+import dollar from "../../img/dollar.svg";
 import { useTranslation } from "react-i18next";
 
 function ChildComponent() {

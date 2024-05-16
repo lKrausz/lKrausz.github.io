@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
-import Header from "../../dataBrands/Header";
-import logo from "../../../src/logo.png";
-import plus from "../../../src/18plus.png";
-import layer from "../../../src/layer.png";
+import Header from "../dataBrands/Header";
+import logo from "../../../src/img/logo.png";
+import plus from "../../../src/img/18plus.png";
+import layer from "../../../src/img/layer.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import AnotherBrands2 from "../AnotherBrands2/AnotherBrands2";

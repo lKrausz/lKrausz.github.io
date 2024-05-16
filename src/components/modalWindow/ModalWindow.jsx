@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import roulete from "../../../src/rouleteGif.gif";
-import rouleteBanner from "../../../src/roulete-banner.png";
-import close from "../../../src/close.png";
-import wheel from "../../../src/wheel.png";
-import rouleteBannerSmall from "../../../src/roulete-banner-mobile.png";
+import roulete from "../../../src/img/rouleteGif.gif";
+import rouleteBanner from "../../../src/img/roulete-banner.png";
+import close from "../../../src/img/close.png";
+import wheel from "../../../src/img/wheel.png";
+import rouleteBannerSmall from "../../../src/img/roulete-banner-mobile.png";
 
 const ModalWindow = ({ newUrl, ipDataCode }) => {
   const [isBannerVisible, setBannerVisible] = useState(false);

@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
-import Loader from "../components/Loader/Loader";
+import Loader from "../Loader/Loader";
 import { useTranslation } from "react-i18next";
 
-import cmn1 from "../../public/cmn1.png";
-import play from "../../public/play.png";
-import card from "../../src/card.png";
+import card from "../../../src/img/card.png";
 
 function OtherBrands({
   newUrl,

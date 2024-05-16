@@ -2,16 +2,16 @@ import { useEffect, useState } from "react";
 
 import OtherBrands from "../otherBrands/otherBrands";
 import TopBrands from "../topBrands/topBrands";
-import NewBrands from "../components/NewBrands/NewBrands";
-import AnotherBrands from "../components/AnotherBrands/AnotherBrands";
+import NewBrands from "../NewBrands/NewBrands";
+import AnotherBrands from "../AnotherBrands/AnotherBrands";
 
-import ModalWindow from "../components/modalWindow/ModalWindow";
+import ModalWindow from "../modalWindow/ModalWindow";
 import { useTranslation } from "react-i18next";
 import twemoji from "twemoji";
-import TopBrandsOfYear from "../components/TopBrandsOfYear/TopBrandsOfYear";
-import DoubleBrands from "../components/DoubleBrands/DoubleBrands";
-import DoubleBrands2 from "../components/DoubleBrands2/DoubleBrands2";
-import CountryBanner from "../components/CountryBanner/CountryBanner";
+import TopBrandsOfYear from "../TopBrandsOfYear/TopBrandsOfYear";
+import DoubleBrands from "../DoubleBrands/DoubleBrands";
+import DoubleBrands2 from "../DoubleBrands2/DoubleBrands2";
+import CountryBanner from "../CountryBanner/CountryBanner";
 
 function ChildComponent() {
   const [ipData, setIpData] = useState(null);

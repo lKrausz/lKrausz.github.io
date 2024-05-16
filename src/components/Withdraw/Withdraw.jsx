@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Header from "../../dataBrands/Header";
+import Header from "../dataBrands/Header";
 import LoaderMini from "../LoaderMini/LoaderMini";
 import { use } from "i18next";
-import logo from "../../../src/logo.png";
-import plus from "../../../src/18plus.png";
-import layer from "../../../src/layer.png";
+import logo from "../../../src/img/logo.png";
+import plus from "../../../src/img/18plus.png";
+import layer from "../../../src/img/layer.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Select from "react-select";
