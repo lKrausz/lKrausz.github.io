@@ -420,7 +420,7 @@
     top: -8px;
     left: -3px;
     padding: 2px 6px;
-    background: #234dd4;
+    background: #024700;
     border-radius: 50%;
   }
   .wallet p {
@@ -895,38 +895,7 @@
     top: 10px;
     right: 10px;
   }
-  h1 {
-    font-size: 76px;
-    line-height: 88.8px;
-  }
-  h2 {
-    font-size: 57px;
-    font-weight: 400;
-    line-height: 74.1px;
-    font-family: "Jost", sans-serif;
-  }
-  h3 {
-    font-size: 43px;
-    line-height: 55.9px;
-    font-weight: 600;
-    font-family: "Jost", sans-serif;
-  }
-  h4 {
-    font-size: 32px;
-    line-height: 41.6px;
-    font-weight: 600;
-    font-family: "Jost", sans-serif;
-  }
-  h5 {
-    font-size: 20px;
-    line-height: 26.2px;
-  }
-  h6 {
-    font-size: 18px;
-    line-height: 23.4px;
-    font-weight: 500;
-    font-family: "Jost", sans-serif;
-  }
+
   .banner__thumb {
     width: 420px;
   }
@@ -981,40 +950,6 @@
     margin-top: -5px;
     font-size: 16px;
     line-height: 24px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  h1 {
-    font-size: 56px;
-    line-height: 76.8px;
-  }
-  h2 {
-    font-size: 57px;
-    font-weight: 400;
-    line-height: 74.1px;
-    font-family: "Jost", sans-serif;
-  }
-  h3 {
-    font-size: 43px;
-    line-height: 55.9px;
-    font-weight: 600;
-    font-family: "Jost", sans-serif;
-  }
-  h4 {
-    font-size: 32px;
-    line-height: 41.6px;
-    font-weight: 600;
-    font-family: "Jost", sans-serif;
-  }
-  h5 {
-    font-size: 18px;
-    line-height: 26.2px;
-  }
-  h6 {
-    font-size: 18px;
-    line-height: 23.4px;
-    font-weight: 500;
-    font-family: "Jost", sans-serif;
   }
 }
 
@@ -1586,38 +1521,6 @@
   }
   .pb-80 {
     padding-bottom: 60px;
-  }
-  h1 {
-    font-size: 48px;
-    line-height: 68.8px;
-  }
-  h2 {
-    font-size: 57px;
-    font-weight: 400;
-    line-height: 74.1px;
-    font-family: "Jost", sans-serif;
-  }
-  h3 {
-    font-size: 43px;
-    line-height: 55.9px;
-    font-weight: 600;
-    font-family: "Jost", sans-serif;
-  }
-  h4 {
-    font-size: 32px;
-    line-height: 41.6px;
-    font-weight: 600;
-    font-family: "Jost", sans-serif;
-  }
-  h5 {
-    font-size: 18px;
-    line-height: 26.2px;
-  }
-  h6 {
-    font-size: 18px;
-    line-height: 23.4px;
-    font-weight: 500;
-    font-family: "Jost", sans-serif;
   }
   .section-header h2 {
     margin-bottom: 1px !important;
