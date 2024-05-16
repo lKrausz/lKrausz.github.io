@@ -158,7 +158,7 @@ function TopBrands({
   return (
     <div className="mtt10">
       {data.length > 0 && (
-        <section id="game" class="game-section pt-95 pb-95">
+        <section id="top-brand" class="game-section pt-95 pb-95">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-10">

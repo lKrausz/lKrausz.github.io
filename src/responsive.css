@@ -112,7 +112,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .game .other-brands {
+  .top-brand .other-brands {
     padding-bottom: 20px;
   }
   .banner {
@@ -195,12 +195,7 @@
   .cards-content .col-xl-3 {
     width: 50%;
   }
-  .cards-content .col-xl-3 .single-game {
-    padding: 20px 10px;
-  }
-  .cards-content .col-xl-3 .single-game h3 {
-    display: none;
-  }
+
   .hero-section .hero-content p {
     margin-bottom: 0 !important;
   }
@@ -347,7 +342,7 @@
   .to-instruction {
     left: 0;
   }
-  .game .container-game {
+  .top-brand .container-game {
     margin-top: 50px;
   }
   .fwb {
@@ -447,12 +442,17 @@
     display: block;
     bottom: 4px;
   }
-  .parent,
+  .parent {
+    max-width: 160px !important;
+    min-width: initial !important;
+    border-radius: 12px !important;
+    border: none !important;
+  }
+
   .additional-options {
     max-width: 160px !important;
     min-width: initial !important;
     border-radius: 12px !important;
-    border: 1px solid hsla(0, 0%, 100%, 0.144) !important;
   }
   header .container .relative {
     margin-top: 10px;
@@ -469,7 +469,7 @@
     padding: 0 10px;
     box-sizing: border-box;
   }
-  .game .container-game {
+  .top-brand .container-game {
     max-width: 95% !important;
   }
   .bg2 .mobile .flex {
@@ -718,7 +718,7 @@
   .api-content .brand .flex div .bonus {
     font-size: 18px;
   }
-  .wrapper .container img:not(.pricing-content img) {
+  .wrapper .container img:not(.other-brands-content img) {
     margin-top: 0;
   }
   .banner1,
@@ -1011,6 +1011,9 @@
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {
+  #top-brand .single-game {
+    margin: 30px !important;
+  }
   .header-wrapper .logo-menu {
     width: 120px;
   }
@@ -1028,6 +1031,7 @@
     font-size: 14px;
     padding: 8px 20px 8px;
   }
+  
 }
 
 @media screen and (max-width: 991px) {
@@ -1616,6 +1620,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  #top-brand .single-game {
+    margin: 30px !important;
+  }
   .faq__section .section-header h2 {
     margin-top: -1px;
   }
@@ -1715,6 +1722,9 @@
   }
 }
 @media screen and (max-width: 575px) {
+  #top-brand .single-game {
+    margin: 50px !important;
+  }
   .banner__wrap {
     padding: 70px 0 80px;
   }
@@ -1828,6 +1838,9 @@
   }
 }
 @media screen and (max-width: 500px) {
+  #top-brand .single-game {
+    margin: 50px !important;
+  }
   .footer__section .shape__right {
     display: none;
   }
@@ -2063,6 +2076,9 @@
   }
 }
 @media screen and (max-width: 480px) {
+  #top-brand .single-game {
+    margin: 20px !important;
+  }
   .section-header h2 {
     margin-bottom: 8px !important;
     font-size: 30px;
@@ -2073,6 +2089,7 @@
   }
 }
 @media screen and (max-width: 420px) {
+
   .footer__top .widget__items .content-area form {
     margin-top: 20px;
   }
@@ -2169,21 +2186,13 @@
     display: none;
   }
 
-  .pricing-section .pricing-content {
+  .other-brands-section .other-brands-content {
     padding: 50px 0;
     text-align: center;
   }
 
-  .pricing-section .pricing-content .image {
+  .other-brands-section .other-brands-content .image {
     display: none;
-  }
-
-  .pricing-section .pricing-active-wrapper .tns-controls {
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: -70px;
-    text-align: center;
   }
 }
 
@@ -2220,21 +2229,13 @@
     display: none;
   }
 
-  .pricing-section .pricing-content {
+  .other-brands-section .other-brands-content {
     padding: 50px 0;
     text-align: center;
   }
 
-  .pricing-section .pricing-content .image {
+  .other-brands-section .other-brands-content .image {
     display: none;
-  }
-
-  .pricing-section .pricing-active-wrapper .tns-controls {
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: -70px;
-    text-align: center;
   }
 }
 
@@ -2279,18 +2280,13 @@
     right: -550px;
   }
 
-  .pricing-section .pricing-content {
+  .other-brands-section .other-brands-content {
     padding: 50px 0;
     text-align: center;
   }
 
-  .pricing-section .pricing-content .image {
+  .other-brands-section .other-brands-content .image {
     display: none;
-  }
-
-  .pricing-section .pricing-active-wrapper .tns-controls {
-    left: 0;
-    bottom: -70px;
   }
 }
 

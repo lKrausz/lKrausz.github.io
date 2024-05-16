@@ -122,11 +122,11 @@ function OtherBrands({
   return (
     <div>
       {otherData.length > 0 && (
-           <section id="game pricing" class=" pricing-section game-section pt-95 pb-95">
+           <section id="other-brands" class=" other-brands-section game-section pt-95 pb-95">
            <div class="container">
              <div class="row">
              <div class="col-xl-4 col-lg-0">
-                    <div class="pricing-content">
+                    <div class="other-brands-content">
                         <div class="image">
                         <img src={`.${card}`} alt={`.${card}`} />
                         </div>

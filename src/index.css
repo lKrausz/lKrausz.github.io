@@ -769,115 +769,26 @@ img{
   height: 120px;
 }
 
-/**** Pricing CSS ****/
-.pricing-section {
+/**** other-brands CSS ****/
+.other-brands-section {
     position: relative;
     z-index: 1;
 }
 
-.pricing-section .pricing-content {
+.other-brands-section .other-brands-content {
     padding: 70px 0;
     position: relative;
     z-index: 1;
     text-align: left;
 }
 
-.pricing-section .pricing-content .image {
+.other-brands-section .other-brands-content .image {
     position: absolute;
     top: 50%;
     left: -50px;
     transform: translateY(-50%);
     z-index: -1;
     width: 400px;
-}
-
-.pricing-section .pricing-active-wrapper {
-    position: relative;
-}
-
-.pricing-section .pricing-active-wrapper .tns-controls {
-    position: absolute;
-    bottom: 60px;
-    left: -200px;
-    z-index: 2;
-}
-
-.pricing-section .pricing-active-wrapper .tns-controls button {
-    width: 60px;
-    height: 45px;
-    border-radius: 30px;
-    background: var(--gradient);
-    overflow: hidden;
-    box-shadow: 1px 1px 20px 0px rgb(255 200 39 / 40%), 1px 1px 15px 0px rgb(255 82 1 / 20%);
-    color: #ffffff;
-    transition: all .3s ease-out 0s;
-    border: none;
-    margin: 0 10px;
-}
-
-.pricing-section .pricing-active-wrapper .tns-controls button:hover {
-    color: #fff;
-    background: var(--gradient);
-    box-shadow: 1px 1px 300px 0px rgb(255 200 39 / 40%), 1px 1px 30px 0px rgb(255 82 1 / 20%);
-}
-
-.pricing-section .pricing-active-wrapper .pricing-active .single-pricing {
-    border-radius: 10px;
-    box-shadow: inset 1px 1px 15px 0px rgb(255 200 39 / 40%), inset 1px 1px 15px 0px rgb(255 82 1 / 20%);
-    transition: all .3s ease-out 0s;
-    padding: 35px 30px;
-    text-align: center;
-    margin: 15px;
-}
-
-.pricing-section .pricing-active-wrapper .pricing-active .single-pricing:hover{
-    box-shadow: inset 1px 1px 35px 0px rgb(255 200 39 / 40%), inset 1px 1px 35px 0px rgb(255 82 1 / 20%);
-}
-
-.pricing-section .pricing-active-wrapper .pricing-active .single-pricing .price-header {
-    position: relative;
-    z-index: 1;
-    width: 150px;
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-bottom: 25px;
-}
-
-.pricing-section .pricing-active-wrapper .pricing-active .single-pricing .price-header .shape {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-bottom: 30px;
-    z-index: -1;
-}
-
-.pricing-section .pricing-active-wrapper .pricing-active .single-pricing .price-header .package-name {
-    margin-bottom: 20px;
-}
-
-.pricing-section .pricing-active-wrapper .pricing-active .single-pricing .price-header .price {
-    font-size: 30px;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.pricing-section .pricing-active-wrapper .pricing-active .single-pricing ul.content {
-    margin-bottom: 30px;
-}
-
-.pricing-section .pricing-active-wrapper .pricing-active .single-pricing ul.content li {
-    font-size: 16px;
-    line-height: 35px;
-}
-
-.pricing-section .pricing-active-wrapper .pricing-active .single-pricing .pricing-btn {
-    margin-right: 1px;
 }
 
 .how-item-thumb {
@@ -1386,10 +1297,10 @@ header select {
   background-color: var(--background-color);
 }
 header {
-  /* position: sticky;
+  position: sticky;
   top: 0;
   left: 0;
-  width: 100%; */
+  width: 100%;
   z-index: 99; 
   background-color: var(--background-color);
   box-shadow: var(--box-shadow);
@@ -1486,7 +1397,7 @@ header .container .relative {
 .tickets a {
   text-decoration: none;
 }
-.game .container-game {
+.top-brand .container-game {
   margin: 30px auto;
 }
 .tickets {
@@ -1644,7 +1555,7 @@ header .container .relative {
 .additional-options {
   background: transparent;
   padding: 10px 15px 10px 25px;
-  border: var(--border) !important;
+  border: var(--border);
   box-shadow: 0px 0px 8px 0px rgba(236, 102, 35, 0.04);
   font-size: 18px;
   font-weight: 900;
@@ -2383,6 +2294,8 @@ a {
 }
 .list-menu {
   z-index: 1;
+  background-color: var(--background-color);
+  border: var(--border) !important;
 }
 .withdrawal-form .btn-primary:disabled {
   background: #b3b1b1 !important;
@@ -2392,7 +2305,7 @@ a {
 .another-brands .fwb {
   border-radius: 10px 10px 0 0 !important;
 }
-.game .banner-text .btn-primary {
+.top-brand .banner-text .btn-primary {
   display: none;
 }
 .banner-slot1 .banner-text h3,
