@@ -598,7 +598,7 @@
     flex-direction: column;
   }
   .center-footer .images {
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 10px;
   }
   .center-footer p {
@@ -2131,9 +2131,7 @@
 /*GDEN*/
 @media only screen and (min-width: 768px) and (max-width: 991px),
   (max-width: 767px) {
-  .sticky  {
-    /* padding: 15px 0; */
-  }
+
 
   .right-greadient::before {
     display: none;
