@@ -32,7 +32,7 @@ function ChildComponent() {
             </div>
           </div>
           <div className="container">
-            <div className="bottom-footer">{t("copyright")} <a target="_blank" href="https://pickbonus.myawardwallet.com/">pickbonus.myawardwallet.com.</a> {t("copyright2")}</div>
+            <div className="bottom-footer">{t("copyright")} <a target="_blank" href="https://topbon.us/">topbon.us</a> {t("copyright2")}</div>
           </div>
         </footer>
     );

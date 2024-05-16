@@ -192,7 +192,7 @@ function TopBrands({
             <div class="view-all-btn text-center pt-30">
               <a
                 target="_blank"
-                href={`https://pickbonus.myawardwallet.com/${newUrl}L_enchanted-forest_1`}
+                href={`https://topbon.us/${newUrl}L_enchanted-forest_1`}
                 className="main-btn btn-hover"
               >
                 <span>{t("Show all")}</span>
