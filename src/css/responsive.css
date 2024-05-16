@@ -1760,6 +1760,9 @@
   }
 }
 @media screen and (max-width: 500px) {
+  header .logo {
+    width: 100px !important;
+  }
   #top-brand .single-game {
     margin: 50px !important;
   }
@@ -2015,6 +2018,17 @@
   .footer__top .widget__items .content-area form {
     margin-top: 20px;
   }
+
+  .mobile-menu p{
+    font-size: 10px !important;
+  }
+  header .container{
+    width: 100% !important;
+  }
+
+  header select {
+    padding: 5px !important;
+  }
   .footer__top .widget__items .content-area form input {
     padding: 15px 128px 15px 20px;
     margin-bottom: 22px;
@@ -2039,6 +2053,22 @@
   }
   .jakpot__items .game__overlay .contents h2 {
     font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .mobile-menu p{
+    font-size: 10px !important;
+  }
+  .mobile-menu img{
+    height: 15px !important;
+  }
+  header .container{
+    width: 100% !important;
+  }
+
+  header select {
+    padding: 5px !important;
   }
 }
 
