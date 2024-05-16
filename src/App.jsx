@@ -43,10 +43,7 @@ function App() {
                 <Route index path="/faq" element={<Faq />} />
                 <Route index path="/tournament" element={<Tournament />} /> */}
                 {/* <Route index path="/terms" element={<Terms />} /> */}
-
-                {/* TODO: change path to other side page  */}
-{/* 
-                <Route index path="/fortunewheel" element={<Wheel />} />
+                {/* <Route index path="/fortunewheel" element={<Wheel />} />
                 <Route index path="/withdrawal" element={<Withdraw />} />
                 <Route index path="/unsubscribed" element={<Unsubscribed />} /> */}
 
