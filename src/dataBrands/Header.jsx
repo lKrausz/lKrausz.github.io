@@ -148,7 +148,7 @@ function ChildComponent() {
   console.log("SOURCE!!!!!!!!!!!!", source);
 
   return (
-    <header>
+    <header class="sticky">
       <div className="container">
         <Link className="flex" to={`/${newUrl}`}>
           <img className="logo" src={`.${logo}`} />

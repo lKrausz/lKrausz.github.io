@@ -56,7 +56,7 @@
   --second-color: #21ff19;
   --darker-second-color: #064d03;
   --pragraph-color: #d4d4d4;
-  --theme-color: #083106;
+  --theme-color: #1de613;
   --base-color: #083106;
   --ratting-color: #363a35;
  
@@ -888,6 +888,12 @@ img{
   background-color: #13081d;
 }
 
+.sticky {
+  position: fixed;
+  z-index: 99;
+  transition: all .3s ease-out 0s;
+}
+
 .how-item-thumb {
   background: #13081d;
 }
@@ -1394,10 +1400,15 @@ header select {
   background-color: var(--background-color);
 }
 header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; 
   background-color: var(--background-color);
   box-shadow: var(--box-shadow);
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
 }
 header * {
   color: var(--font-white)  !important;
