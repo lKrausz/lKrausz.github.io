@@ -1306,6 +1306,12 @@ header {
   box-shadow: var(--box-shadow);
   position: relative;
 }
+
+.sticky {
+  position: fixed;
+  z-index: 99;
+  transition: all .3s ease-out 0s;
+}
 header * {
   color: var(--font-white)  !important;
 }
