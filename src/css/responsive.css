@@ -1,5 +1,9 @@
 @media (min-width: 1260px) and (max-width: 5000px) {
 
+  .other-brands-section .row .row .col-md-4:last-child {
+    display: none;
+  }
+
   .other-brands-section .other-brands-content .image {
     position: absolute;
     top: 50%;
@@ -953,6 +957,13 @@
   }
 }
 
+@media (min-width: 1200px) and (max-width: 1260px) {
+  .other-brands-section .row .row .col-md-4:last-child {
+    display: none;
+  }
+  
+}
+
 @media (min-width: 991px) and (max-width: 1199px) {
   #top-brand .single-game {
     margin: 30px !important;
@@ -973,6 +984,9 @@
   .header-wrapper .mneu-btn-grp .cmn--btn2 {
     font-size: 14px;
     padding: 8px 20px 8px;
+  }
+  .other-brands-section .row .row .col-md-4:last-child {
+    display: none;
   }
   
 }
@@ -1531,9 +1545,6 @@
   }
 }
 @media screen and (max-width: 767px) {
-  #top-brand .single-game {
-    margin: 30px !important;
-  }
   .faq__section .section-header h2 {
     margin-top: -1px;
   }
@@ -2064,6 +2075,10 @@
   }
 
   .hero-section .hero-shape .shape.shape-1 {
+    display: none;
+  }
+
+  .other-brands-section .row .row .col-md-4:last-child {
     display: none;
   }
 

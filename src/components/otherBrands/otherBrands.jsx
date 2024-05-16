@@ -38,9 +38,9 @@ function OtherBrands({
         shuffledArray[i],
       ];
     }
-    //Обрезка массива до трех элементов, чтобы было по шаблону
-    if (shuffledArray.length > 3) {
-        return shuffledArray.slice(0,3);
+    //Обрезка массива до 4 элементов, чтобы было по шаблону
+    if (shuffledArray.length > 4) {
+        return shuffledArray.slice(0,4);
     }
     return shuffledArray;
   }
@@ -137,7 +137,7 @@ function OtherBrands({
              <div class="row col-xl-8 col-lg-12">
                {otherData.length > 0 ? (
                  otherData.slice(0, 6).map((rowData, index) => (
-                   <div class="col-xl-4 col-md-4" key={index}>
+                   <div class="col-xl-4 col-md-4 col-sm-6" key={index}>
                      <div class="single-game box-inner-shadow">
                        <div className="game_thumb">
                          <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />

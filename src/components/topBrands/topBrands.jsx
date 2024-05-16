@@ -167,7 +167,7 @@ function TopBrands({
             </div>
             <div class="row">
               {data.map((rowData, index) => (
-                <div class="col-xl-3 col-md-6" key={index}>
+                <div class="col-xl-3 col-md-6 col-sm-6" key={index}>
                   <div class="single-game box-inner-shadow">
                     <div className="game_thumb">
                       <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
