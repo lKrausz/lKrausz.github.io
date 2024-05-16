@@ -1,7 +1,9 @@
 /*Goole Font Use*/
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
+
+/*Emoji*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
 
 /*** 
 ====================================================================
@@ -99,6 +101,23 @@
   background: var(--background-color);
 }
 
+/*** 
+====================================================================
+	Emoji class
+====================================================================
+***/
+
+.noto-color-emoji-regular {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-weight: 600;
+  font-style: bold;
+}
+
+/*** 
+====================================================================
+	Page 
+====================================================================
+***/
 
 html {
     scroll-behavior: smooth;
@@ -610,30 +629,7 @@ img{
     }
 }
 
-.go-zoom-1::before {
-    animation-name: go-zoom;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    -webkit-animation-name: go-zoom;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: go-zoom;
-    -moz-animation-duration: 5s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: go-zoom;
-    -ms-animation-duration: 5s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-    -o-animation-name: go-zoom;
-    -o-animation-duration: 5s;
-    -o-animation-iteration-count: infinite;
-    -o-animation-timing-function: linear;
-}
-
-.go-zoom-1::after {
+.go-zoom-1::before, .go-zoom-1::after {
     animation-name: go-zoom;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -882,16 +878,6 @@ img{
 
 .pricing-section .pricing-active-wrapper .pricing-active .single-pricing .pricing-btn {
     margin-right: 1px;
-}
-
-.sticky {
-  background-color: #13081d;
-}
-
-.sticky {
-  position: fixed;
-  z-index: 99;
-  transition: all .3s ease-out 0s;
 }
 
 .how-item-thumb {
@@ -1400,15 +1386,14 @@ header select {
   background-color: var(--background-color);
 }
 header {
-  position: sticky;
+  /* position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 100; 
+  width: 100%; */
+  z-index: 99; 
   background-color: var(--background-color);
   box-shadow: var(--box-shadow);
   position: relative;
-  /* z-index: 2; */
 }
 header * {
   color: var(--font-white)  !important;
@@ -2688,56 +2673,6 @@ body {
   margin: 0;
   background: var(--background-color);
   /* overflow-x: auto; */
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Jost", sans-serif;
-}
-
-h1 {
-  font-size: 76px;
-  font-weight: 600;
-  line-height: 98.8px;
-  font-family: "Jost", sans-serif;
-}
-
-h2 {
-  font-size: 57px;
-  font-weight: 400;
-  line-height: 74.1px;
-  font-family: "Jost", sans-serif;
-}
-
-h3 {
-  font-size: 43px;
-  line-height: 55.9px;
-  font-weight: 600;
-  font-family: "Jost", sans-serif;
-}
-
-h4 {
-  font-size: 32px;
-  line-height: 41.6px;
-  font-weight: 600;
-  font-family: "Jost", sans-serif;
-}
-
-h5 {
-  font-size: 24px;
-  line-height: 31.2px;
-  font-weight: 600;
-  font-family: "Jost", sans-serif;
-}
-
-h6 {
-  font-size: 18px;
-  line-height: 23.4px;
-  font-weight: 600;
-  font-family: "Jost", sans-serif;
 }
 
 ul {

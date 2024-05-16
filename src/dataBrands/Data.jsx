@@ -131,7 +131,7 @@ function ChildComponent() {
         selectedCountry={selectedCountry}
       />
       {source === "partner1043" && (
-        <div className="select-brand container">
+        <div className="select-brand container ">
           <p>{t("select")}</p>
           <select
             id="countrySelect"
@@ -140,7 +140,7 @@ function ChildComponent() {
             onChange={(e) => handleCountryChange(e.target.value)}
           >
             {countryOptions1043.map((country, index) => (
-              <option
+              <option class=".noto-color-emoji-regular noto-color-emoji-regular"
                 key={index}
                 value={country.code}
                 selected={country.code === ipDataCode}
@@ -152,7 +152,7 @@ function ChildComponent() {
         </div>
       )}
       {source === "partner1044" && (
-        <div className="select-brand container">
+        <div className="select-brand container noto-color-emoji-regular">
           <p>{t("select")}</p>
           <select
             id="countrySelect"
@@ -173,7 +173,7 @@ function ChildComponent() {
         </div>
       )}
       {source !== "partner1044" && source !== "partner1043" && (
-        <div className="select-brand container">
+        <div className="select-brand container noto-color-emoji-regular">
           <p>{t("select")}</p>
           <select
             id="countrySelect"

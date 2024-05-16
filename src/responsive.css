@@ -458,7 +458,7 @@
     margin-top: 10px;
   }
   header select {
-    font-size: 14px;
+    font-size: 14px !important;
     padding: 8px 20px 8px 10px;
     border-radius: 12px;
     background-size: 9px;
