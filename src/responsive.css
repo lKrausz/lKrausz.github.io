@@ -2131,36 +2131,8 @@
 /*GDEN*/
 @media only screen and (min-width: 768px) and (max-width: 991px),
   (max-width: 767px) {
-  .sticky .navbar {
-    padding: 15px 0;
-  }
-
-  .navbar {
-    padding: 17px 0;
-  }
-
-  .navbar-nav .nav-item a {
-    display: inline-block;
-    padding: 6px 0;
-    color: #ffffff;
-  }
-
-  .navbar-nav .nav-item {
-    margin-left: 20px;
-  }
-
-  .navbar-collapse {
-    position: absolute;
-    margin-top: 15px;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    z-index: 9;
-    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
-    padding: 12px;
-    border-radius: 25px;
-    box-shadow: inset 1px 1px 20px 0px rgb(255 200 39 / 40%),
-      1px 1px 15px 0px rgb(255 82 1 / 20%);
+  .sticky  {
+    /* padding: 15px 0; */
   }
 
   .right-greadient::before {
