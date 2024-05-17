@@ -109,6 +109,9 @@ select#countrySelect option {
 }
 
 .MuiSelect-select {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   color: white !important;
   font-size: 20px !important;
   position: relative;
@@ -1041,6 +1044,10 @@ img {
 .game-section .single-game .game_thumb p {
   margin-top: 20px;
   height: 120px;
+}
+
+.game-section .single-game .game_thumb img {
+  max-width: 200px;
 }
 
 /**** other-brands CSS ****/

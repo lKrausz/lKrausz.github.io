@@ -210,7 +210,7 @@ function ChildComponent() {
             minWidth: 300
           }}>
             <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">{t("select")}</InputLabel>
+              <InputLabel>{t("select")}</InputLabel>
               <Select
                 id="countrySelect"
                 value={selectedCountry}
