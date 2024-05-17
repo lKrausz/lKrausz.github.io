@@ -13,6 +13,13 @@ import DoubleBrands from "../DoubleBrands/DoubleBrands";
 import DoubleBrands2 from "../DoubleBrands2/DoubleBrands2";
 import CountryBanner from "../CountryBanner/CountryBanner";
 
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+
 function ChildComponent() {
   const [ipData, setIpData] = useState(null);
   const [ipDataCode, setIpDataCode] = useState(null);
@@ -61,6 +68,7 @@ function ChildComponent() {
     { code: "se", name: "Sweden", flag: "🇸🇪" },
     { code: "fi", name: "Finland", flag: "🇫🇮" },
   ];
+
 
   useEffect(() => {
     // Запрос к API с использованием fetch
@@ -144,6 +152,7 @@ function ChildComponent() {
                 key={index}
                 value={country.code}
                 selected={country.code === ipDataCode}
+                class={country.code}
               >
                 {country.flag} {country.name}
               </option>
@@ -165,6 +174,7 @@ function ChildComponent() {
                 key={index}
                 value={country.code}
                 selected={country.code === ipDataCode}
+                class={country.code}
               >
                 {country.flag} {country.name}
               </option>
@@ -173,26 +183,58 @@ function ChildComponent() {
         </div>
       )}
       {source !== "partner1044" && source !== "partner1043" && (
+        // <div className="select-brand container">
+        //   <p>{t("select")}</p>
+        //   <select
+        //     id="countrySelect"
+        //     value={selectedCountry}
+        //     // onChange={(e) => setSelectedCountry(e.target.value)}
+        //     onChange={(e) => handleCountryChange(e.target.value)}
+        //   >
+        //     {countryOptions.map((country, index) => (
+        //       <option
+        //         key={index}
+        //         value={country.code}
+        //         selected={country.code === ipDataCode}
+        //       >
+        //         <div class={country.code}></div>
+        //         {country.name}
+        //       </option>
+        //     ))}
+        //   </select>
+        // </div>
+
         <div className="select-brand container">
-          <p>{t("select")}</p>
-          <select
-            id="countrySelect"
-            value={selectedCountry}
-            // onChange={(e) => setSelectedCountry(e.target.value)}
-            onChange={(e) => handleCountryChange(e.target.value)}
-          >
-            {countryOptions.map((country, index) => (
-              <option
-                key={index}
-                value={country.code}
-                selected={country.code === ipDataCode}
+          <Box sx={{
+            m: 1,
+            minWidth: 300
+          }}>
+            <FormControl fullWidth>
+              <InputLabel id="demo-simple-select-label">{t("select")}</InputLabel>
+              <Select
+                id="countrySelect"
+                value={selectedCountry}
+                label={t("select")}
+                onChange={(e) => handleCountryChange(e.target.value)}
               >
-                {country.flag} {country.name}
-              </option>
-            ))}
-          </select>
+                {countryOptions.map((country, index) => (
+                  <MenuItem
+                    key={index}
+                    value={country.code}
+                    selected={country.code === ipDataCode}
+                  >
+                    <div class={country.code}></div>
+                    {country.name}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          </Box>
         </div>
       )}
+
+
+
       <TopBrands
         newUrl={newUrl}
         ipDataCode={ipDataCode}
