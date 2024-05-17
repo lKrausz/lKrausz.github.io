@@ -105,7 +105,8 @@
 	Flags + MUI
 ====================================================================
 ***/
-select#countrySelect option {
+.overflow-lock {
+  overflow: hidden !important;
 }
 
 .MuiSelect-select {
@@ -124,6 +125,10 @@ select#countrySelect option {
 }
 .MuiFormLabel-root {
   color: #008000 !important;
+}
+
+.MuiMenu-list {
+  max-height: 300px !important;
 }
 
 .au {
@@ -858,7 +863,7 @@ img {
   top: 20px;
   width: 400px;
   height: 320px;
-  background: url(../src/hero-bg-02.png) center;
+  background: url(../src/img/hero-bg-02.png) center;
   background-repeat: no-repeat;
 }
 
@@ -869,7 +874,7 @@ img {
   bottom: 0;
   width: 319px;
   height: 321px;
-  background: url(../src/hero-bg-03.png) center;
+  background: url(../src/img/hero-bg-03.png) center;
   background-repeat: no-repeat;
 }
 
@@ -1048,6 +1053,7 @@ img {
 
 .game-section .single-game .game_thumb img {
   max-width: 200px;
+  width: 100%;
 }
 
 /**** other-brands CSS ****/

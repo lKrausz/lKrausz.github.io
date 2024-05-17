@@ -54,6 +54,10 @@ function TopBrands({
         shuffledArray[i],
       ];
     }
+    //Обрезка массива до 4 элементов, чтобы было по шаблону
+    if (shuffledArray.length > 4) {
+      return shuffledArray.slice(0,4);
+  }
     return shuffledArray;
   }
 

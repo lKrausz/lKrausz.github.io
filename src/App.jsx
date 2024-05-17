@@ -33,7 +33,6 @@ function App() {
   return (
   
       <HashRouter>
-        <div className="App">
         {/* <I18nInitializer />  */}
         {/* <LanguageSelector />  */}
             <Routes>
@@ -49,7 +48,6 @@ function App() {
 
 
             </Routes>
-        </div>
       </HashRouter>
  
   );
