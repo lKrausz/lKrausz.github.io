@@ -122,16 +122,16 @@ function AnotherBrands({
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="hero-content top-greadient">
-                    <span class="wow fadeInLeft mb-20" data-wow-delay=".2s"> {t("Elves' Special:")}</span>
-                    <h1 class="wow fadeInUp" data-wow-delay=".4s">
-                      {t("Discover Your Delightful Bonus Gifts!")}
-                    </h1>
+                    <span class="wow fadeInLeft mb-20" data-wow-delay=".2s"> {t("Why So Serious? Grab Your Bonus Now!")}</span>
+                    <h4 class="wow fadeInUp" data-wow-delay=".4s">
+                      {t("We've handpicked the most exclusive and jaw-dropping bonuses from top-tier online casinos just for you. The Joker's treasure trove of rewards is just a click away!")}
+                    </h4>
                     
                 </div>
                 {otherData.length > 0 ? (
                       otherData.slice(0, 1).map((rowData, index) => (
                             <a key={index} target="_blank" href={rowData["GoBig"] + newUrl + "L_enchanted-forest_random"} className="main-btn btn-hover wow fadeInUp" >
-                                <span>{t("Get your bonuses")}</span>
+                                <span>{t("TRY YOUR LUCK")}</span>
                             </a>
                                ))
                                ) : (

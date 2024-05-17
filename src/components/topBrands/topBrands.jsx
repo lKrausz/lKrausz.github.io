@@ -163,9 +163,9 @@ function TopBrands({
         <section id="top-brand" class="game-section pt-95 pb-95">
           <div class="container">
             <div class="row justify-content-center">
-              <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-10">
+              <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10">
                 <div class="section-title text-center right-greadient mb-50">
-                  <h1 class="mb-25">{t("New")}</h1>
+                  <h1 class="mb-25">{t("Joker's New Favorites: Fresh and Exciting Casinos")}</h1>
                 </div>
               </div>
             </div>

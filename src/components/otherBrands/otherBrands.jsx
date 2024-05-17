@@ -129,8 +129,7 @@ function OtherBrands({
                         <img src={`.${card}`} alt={`.${card}`} />
                         </div>
                         <div class="section-title">
-                            <h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><span class="common-gre-color">{t("Enchanted Offers")}</span></h1>
-                            <p class="wow fadeInUp" data-wow-delay=".4s">A casino is a facility for certain types of gambling. Casinos are often built near or combined with hotels, resorts, restaurants, retail shopping, cruise ships, and other tourist attractions.</p>
+                            <h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><span class="common-gre-color">{t("Joker's Best Bonus Casinos")}</span></h1>
                         </div>
                     </div>
                 </div>
