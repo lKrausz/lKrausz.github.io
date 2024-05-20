@@ -157,7 +157,7 @@ function ChildComponent() {
           <div className="flex ml-auto items-center">
             {Object.keys(user).length > 0 && (
               <div className="tickets">
-                <Link to={"https://topbon.us/fortune"}>
+                <Link to={`https://topbon.us/fortune/${newUrl}`}>
                   <img id="dollar" src={`.${dollar}`} alt={dollar} />
                   {t("Wheel of Fortune")} <span>{user.tickets}</span>
                 </Link>
@@ -181,7 +181,7 @@ function ChildComponent() {
                   <div className="option">
                     <Link
                       className="flex items-center"
-                      to={"https://topbon.us/personal"}
+                      to={`https://topbon.us/personal/${newUrl}`}
                       onClick={() => setShowAdditionalOptions(false)}
                     >
                       <img className="mr-1" src={`.${wallet}`} alt={wallet} />{" "}
@@ -201,7 +201,7 @@ function ChildComponent() {
               {Object.keys(user).length > 0 && (
                 <div className="flex items-center">
                   <Link
-                    to={"https://topbon.us/personal"}
+                    to={`https://topbon.us/personal/${newUrl}`}
                     className="wallet flex items-center"
                   >
                     <img src={`.${wallet}`} alt={wallet} />
@@ -221,7 +221,7 @@ function ChildComponent() {
                 <div className="list-menu">
                   {Object.keys(user).length > 0 && ( // Проверяем, есть ли данные в user
                     <Link
-                      to={"https://topbon.us/personal"}
+                      to={`https://topbon.us/personal/${newUrl}`}
                       className="balanceWithdraw"
                     >
                       <img className="mr-1" src={`.${wallet}`} alt={wallet} />
@@ -231,7 +231,7 @@ function ChildComponent() {
                   <div className="mobile-menu-content">
                     {Object.keys(user).length > 0 && (
                       <Link
-                        to={"https://topbon.us/fortune"}
+                        to={`https://topbon.us/fortune/${newUrl}`}
                         className="balanceWithdraw"
                       >
                         <img className="mr-1" src={`.${dollar}`} alt={dollar} />
