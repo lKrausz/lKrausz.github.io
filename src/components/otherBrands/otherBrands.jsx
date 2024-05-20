@@ -18,11 +18,13 @@ function OtherBrands({
 
   const [loading, setLoading] = useState(true);
   const [otherData, setOtherData] = useState([]);
-  const [visibleBrands, setVisibleBrands] = useState(8);
+  // const [visibleBrands, setVisibleBrands] = useState(8);
+  const [step, setStep] = useState(3);
+  const [isAllElements, setAllElements] = useState(false);
 
-  const handleShowMore = () => {
-    setVisibleBrands((prevVisibleBrands) => prevVisibleBrands + 8);
-  };
+  // const handleShowMore = () => {
+  //   setVisibleBrands((prevVisibleBrands) => prevVisibleBrands + 8);
+  // };
 
   const apiOld = "https://pickbonus.myawardwallet.com/api/brands/read.php";
   const apiNew = "https://pickbonus.myawardwallet.com/api/brands/read2.php";
@@ -31,18 +33,25 @@ function OtherBrands({
 
   function shuffleArray(array) {
     const shuffledArray = array.slice();
-    for (let i = shuffledArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffledArray[i], shuffledArray[j]] = [
-        shuffledArray[j],
-        shuffledArray[i],
-      ];
-    }
-    //Обрезка массива до 3 элементов, чтобы было по шаблону
-    if (shuffledArray.length > 3) {
-        return shuffledArray.slice(0,3);
+    // for (let i = shuffledArray.length - 1; i > 0; i--) {
+    //   const j = Math.floor(Math.random() * (i + 1));
+    //   [shuffledArray[i], shuffledArray[j]] = [
+    //     shuffledArray[j],
+    //     shuffledArray[i],
+    //   ];
+    // }
+    //Обрезка массива до step элементов, чтобы было по шаблону
+    if (shuffledArray.length > step) {
+      setAllElements(false)
+      return shuffledArray.slice(0, step);
+    } else {
+      setAllElements(true)
     }
     return shuffledArray;
+  }
+
+  function loadMoreItems() {
+    setStep(prevIndex => prevIndex + 3);
   }
 
   useEffect(() => {
@@ -97,6 +106,7 @@ function OtherBrands({
           setOtherData(shuffleArray(filteredDataOther));
           setLoading(false);
 
+          console.log("BROROBROBRORO: ", filteredDataOther)
           // Если нет брендов, вызывать setSelectedCountry
           // if (filteredDataOther.length === 0) {
           //   setSelectedCountry("all");
@@ -113,65 +123,75 @@ function OtherBrands({
     if ((ipDataCode && currentLanguage) || (geo && currentLanguage)) {
       fetchData();
     }
-  }, [ipDataCode, currentLanguage, selectedCountry, source]);
+  }, [ipDataCode, currentLanguage, selectedCountry, source, step, isAllElements]);
 
   // ...
 
   return (
     <div>
       {otherData.length > 0 && (
-           <section id="other-brands" class=" other-brands-section game-section pt-95 pb-95">
-           <div class="container">
-             <div class="row">
-             <div class="col-xl-4 col-lg-0">
-                    <div class="other-brands-content">
-                        <div class="image">
-                        <img src={`.${card}`} alt={`.${card}`} />
-                        </div>
-                        <div class="section-title">
-                            <h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><span class="common-gre-color">{t("Joker's Best Bonus Casinos")}</span></h1>
-                        </div>
-                    </div>
+        <section id="other-brands" class=" other-brands-section game-section pt-95 pb-95">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-4 col-lg-0">
+                <div class="other-brands-content">
+                  <div class="image">
+                    <img src={`.${card}`} alt={`.${card}`} />
+                  </div>
+                  <div class="section-title">
+                    <h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><span class="common-gre-color">{t("Joker's Best Bonus Casinos")}</span></h1>
+                  </div>
                 </div>
-             <div class="row col-xl-8 col-lg-12">
-               {otherData.length > 0 ? (
-                 otherData.slice(0, 6).map((rowData, index) => (
-                   <div class="col-xl-4 col-md-4 col-sm-6" key={index}>
-                     <div class="single-game box-inner-shadow">
-                       <div className="game_thumb">
-                         <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
-   
-                         <p class="mb-15">{rowData["OurOfferContent"]}</p>
-   
-                         <div className="game__overlay">
-                           <a class="play-btn btn-hover" href={
-                                     rowData["GoBig"] +
-                                     newUrl +
-                                     "L_enchanted-forest_2"
-                                   }>
-                             Play Now!
-                           </a>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 ))
-               ) : (
-                 <p className="ti">{t("No brands available for your country")}</p>
-               )}
-             </div>
-             </div>
-             <div class="view-all-btn text-center pt-30">
-               <a
-                 target="_blank"
-                 href={`https://topbon.us/${newUrl}L_enchanted-forest_2`}
-                 className="main-btn btn-hover"
-               >
-                 <span>{t("Show all")}</span>
-               </a>
-             </div>
-           </div>
-         </section>
+              </div>
+              <div class="row col-xl-8 col-lg-12">
+                {otherData.length > 0 ? (
+                  otherData.map((rowData, index) => (
+                    <div class="col-xl-4 col-md-4 col-sm-6" key={index}>
+                      <div class="single-game box-inner-shadow">
+                        <div className="game_thumb">
+                          <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
+
+                          <p class="mb-15">{rowData["OurOfferContent"]}</p>
+
+                          <div className="game__overlay">
+                            <a class="play-btn btn-hover" href={
+                              rowData["GoBig"] +
+                              newUrl +
+                              "L_enchanted-forest_2"
+                            }>
+                              {t("Play Now!")}
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <p className="ti">{t("No brands available for your country")}</p>
+                )}
+              </div>
+            </div>
+            <div class="view-all-btn text-center pt-30">
+              {isAllElements ? (
+                <a
+                  target="_blank"
+                  href={`https://topbon.us/${newUrl}L_enchanted-forest_2`}
+                  className="main-btn btn-hover"
+                >
+                  <span>{t("More offers")}</span>
+                </a>
+              ) : (
+                <a
+                  target="_blank"
+                  onClick={loadMoreItems}
+                  className="main-btn btn-hover"
+                >
+                  <span>{t("Show more")}</span>
+                </a>
+              )}
+            </div>
+          </div>
+        </section>
       )}
     </div>
   );

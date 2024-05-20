@@ -19,6 +19,8 @@ function TopBrands({
   const [data, setData] = useState([]);
   const [topData, setTopData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [step, setStep] = useState(4);
+  const [isAllElements, setAllElements] = useState(false);
 
   const settings = {
     infinite: true,
@@ -47,18 +49,25 @@ function TopBrands({
 
   function shuffleArray(array) {
     const shuffledArray = array.slice(); // Создаем копию массива
-    for (let i = shuffledArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffledArray[i], shuffledArray[j]] = [
-        shuffledArray[j],
-        shuffledArray[i],
-      ];
+    // for (let i = shuffledArray.length - 1; i > 0; i--) {
+    //   const j = Math.floor(Math.random() * (i + 1));
+    //   [shuffledArray[i], shuffledArray[j]] = [
+    //     shuffledArray[j],
+    //     shuffledArray[i],
+    //   ];
+    // }
+    //Обрезка массива до step элементов, чтобы было по шаблону
+    if (shuffledArray.length > step) {
+      setAllElements(false)
+      return shuffledArray.slice(0, step);
+    } else {
+      setAllElements(true)
     }
-    //Обрезка массива до 4 элементов, чтобы было по шаблону
-    if (shuffledArray.length > 4) {
-      return shuffledArray.slice(0,4);
-  }
     return shuffledArray;
+  }
+
+  function loadMoreItems() {
+    setStep(prevIndex => prevIndex + 4);
   }
 
   console.log("============", source);
@@ -152,7 +161,7 @@ function TopBrands({
     if ((geo && currentLanguage) || (!geo && ipDataCode && currentLanguage)) {
       fetchData();
     }
-  }, [ipDataCode, brandValue, currentLanguage, selectedCountry, source]);
+  }, [ipDataCode, brandValue, currentLanguage, selectedCountry, source, step, isAllElements]);
 
   const combinedData = [...topData, ...data];
   console.log("combined", combinedData);
@@ -184,7 +193,7 @@ function TopBrands({
                           newUrl +
                           "L_enchanted-forest_1"
                         }>
-                          Play Now!
+                          {t("Play Now!")}
                         </a>
                       </div>
                     </div>
@@ -194,13 +203,24 @@ function TopBrands({
               )}
             </div>
             <div class="view-all-btn text-center pt-30">
-              <a
-                target="_blank"
-                href={`https://topbon.us/${newUrl}L_enchanted-forest_1`}
-                className="main-btn btn-hover"
-              >
-                <span>{t("Show all")}</span>
-              </a>
+              {isAllElements ? (
+                <a
+                  target="_blank"
+                  href={`https://topbon.us/${newUrl}L_enchanted-forest_1`}
+                  className="main-btn btn-hover"
+                >
+                  <span>{t("More offers")}</span>
+                </a>
+              ) : (
+                <a
+                  target="_blank"
+                  onClick={loadMoreItems}
+                  className="main-btn btn-hover"
+                >
+                  <span>{t("Show more")}</span>
+                </a>
+              )}
+
             </div>
           </div>
         </section>
