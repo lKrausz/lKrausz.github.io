@@ -160,12 +160,12 @@ function TopBrands({
   return (
     <div className="mtt10">
       {data.length > 0 && (
-        <section id="top-brand" class="game-section pt-95 pb-95">
+        <section id="top-brand" class="game-section pt-30 pb-55">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10">
                 <div class="section-title text-center right-greadient mb-50">
-                  <h1 class="mb-25">{t("Joker's New Favorites: Fresh and Exciting Casinos")}</h1>
+                  <h2 class="mb-25">{t("Joker's New Favorites: Fresh and Exciting Casinos")}</h2>
                 </div>
               </div>
             </div>
