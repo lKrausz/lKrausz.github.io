@@ -21,6 +21,7 @@ function OtherBrands({
   // const [visibleBrands, setVisibleBrands] = useState(8);
   const [step, setStep] = useState(3);
   const [isAllElements, setAllElements] = useState(false);
+  const [isExtraElements, setExtraElements] = useState(false);
 
   // const handleShowMore = () => {
   //   setVisibleBrands((prevVisibleBrands) => prevVisibleBrands + 8);
@@ -51,7 +52,8 @@ function OtherBrands({
   }
 
   function loadMoreItems() {
-    setStep(prevIndex => prevIndex + 3);
+    setExtraElements(true);
+    setStep(prevIndex => prevIndex + 4);
   }
 
   useEffect(() => {
@@ -106,7 +108,6 @@ function OtherBrands({
           setOtherData(shuffleArray(filteredDataOther));
           setLoading(false);
 
-          console.log("BROROBROBRORO: ", filteredDataOther)
           // Если нет брендов, вызывать setSelectedCountry
           // if (filteredDataOther.length === 0) {
           //   setSelectedCountry("all");
@@ -133,7 +134,7 @@ function OtherBrands({
         <section id="other-brands" class=" other-brands-section game-section pt-95 pb-95">
           <div class="container">
             <div class="row">
-              <div class="col-xl-4 col-lg-0">
+              <div class="col-xl-4">
                 <div class="other-brands-content">
                   <div class="image">
                     <img src={`.${card}`} alt={`.${card}`} />
@@ -145,7 +146,7 @@ function OtherBrands({
               </div>
               <div class="row col-xl-8 col-lg-12">
                 {otherData.length > 0 ? (
-                  otherData.map((rowData, index) => (
+                  otherData.slice(0,3).map((rowData, index) => (
                     <div class="col-xl-4 col-md-4 col-sm-6" key={index}>
                       <div class="single-game box-inner-shadow">
                         <div className="game_thumb">
@@ -170,6 +171,38 @@ function OtherBrands({
                   <p className="ti">{t("No brands available for your country")}</p>
                 )}
               </div>
+                {isExtraElements ? (
+                  <div class="row col-xl-12">
+                  {otherData.length > 0 ? (
+                    otherData.slice(3).map((rowData, index) => (
+                      <div class="col-xl-3 col-md-3 col-sm-6" key={index}>
+                        <div class="single-game box-inner-shadow">
+                          <div className="game_thumb">
+                            <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
+  
+                            <p class="mb-15">{rowData["OurOfferContent"]}</p>
+  
+                            <div className="game__overlay">
+                              <a class="play-btn btn-hover" href={
+                                rowData["GoBig"] +
+                                newUrl +
+                                "L_enchanted-forest_2"
+                              }>
+                                {t("Play Now!")}
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))
+                  ) : (
+                    <p className="ti">{t("No brands available for your country")}</p>
+                  )}
+                </div>
+                ) : (
+                    <p></p>
+                )}
+              
             </div>
             <div class="view-all-btn text-center pt-30">
               {isAllElements ? (
