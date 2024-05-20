@@ -61,9 +61,28 @@ function ChildComponent() {
     { code: "us", name: "United States", flag: "🇺🇸" },
   ];
   const countryOptions1044 = [
-    { code: "all", name: "World", flag: "🌍" },
-    { code: "se", name: "Sweden", flag: "🇸🇪" },
+    { code: "au", name: "Australia", flag: "🇦🇺" },
+    { code: "at", name: "Austria", flag: "🇦🇹" },
+    { code: "be", name: "Belgium", flag: "🇧🇪" },
+    { code: "ca", name: "Canada", flag: "🇨🇦" },
+    { code: "cz", name: "The Czech Republic", flag: "🇨🇿" },
+    { code: "dk", name: "Denmark", flag: "🇩🇰" },
     { code: "fi", name: "Finland", flag: "🇫🇮" },
+    { code: "fr", name: "France", flag: "🇫🇷" },
+    { code: "de", name: "Germany", flag: "🇩🇪" },
+    { code: "gb", name: "Great Britain", flag: "🇬🇧" },
+    { code: "gr", name: "Greece", flag: "🇬🇷" },
+    { code: "ie", name: "Ireland", flag: "🇮🇪" },
+    { code: "it", name: "Italy", flag: "🇮🇹" },
+    { code: "nl", name: "Netherlands", flag: "🇳🇱" },
+    { code: "no", name: "Norway", flag: "🇳🇴" },
+    { code: "nz", name: "New Zealand", flag: "🇳🇿" },
+    { code: "pl", name: "Poland", flag: "🇵🇱" },
+    { code: "se", name: "Sweden", flag: "🇸🇪" },
+    { code: "za", name: "South Africa", flag: "🇿🇦" },
+    { code: "ch", name: "Switzerland", flag: "🇨🇭" },
+    { code: "us", name: "USA", flag: "🇺🇸" },
+    { code: "all", name: "World", flag: "🌍" },
   ];
 
   useEffect(() => {
