@@ -149,7 +149,7 @@ function OtherBrands({
                                      newUrl +
                                      "L_enchanted-forest_2"
                                    }>
-                             Play Now!
+                             {t("Play Now!")}
                            </a>
                          </div>
                        </div>
