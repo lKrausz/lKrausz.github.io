@@ -2073,6 +2073,18 @@
 @media only screen and (min-width: 768px) and (max-width: 991px),
   (max-width: 767px) {
 
+    .hero-section .hero-content span {
+      font-size: 26px !important;
+    }
+  
+    .hero-section .hero-content h4 {
+      font-size: 24px !important;
+    }
+  
+    .hero-section .main-btn {
+      margin-bottom: 30px;
+    }
+
 
   .right-greadient::before {
     display: none;
@@ -2132,10 +2144,6 @@
 
   .hero-section .hero-content {
     margin-bottom: 50px;
-  }
-
-  .hero-section .hero-content h1 {
-    font-size: 36px;
   }
 
   .hero-section .hero-img img {
@@ -2214,6 +2222,23 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+
+  .hero-section {
+    padding-top: 150px !important;
+  }
+
+  .hero-section .hero-content span {
+    font-size: 20px !important;
+  }
+
+  .hero-section .hero-content h4 {
+    font-size: 18px !important;
+  }
+
+  .hero-section .main-btn {
+    margin-bottom: 20px;
+  }
+  
   .h2style {
     font-size: 26px !important;
     margin-bottom: 0 !important;
