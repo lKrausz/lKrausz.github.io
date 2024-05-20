@@ -4847,3 +4847,10 @@ h3 {
   line-height: 20px;
   min-height: 69px;
 }
+
+
+.fixed-position {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}

@@ -184,7 +184,7 @@ function TopBrands({
                           newUrl +
                           "L_enchanted-forest_1"
                         }>
-                          {t("Play Now!")}
+                          Play Now!
                         </a>
                       </div>
                     </div>

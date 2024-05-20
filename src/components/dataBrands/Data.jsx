@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react";
-
+import { useEffect, useState, useRef } from "react";
 import OtherBrands from "../otherBrands/otherBrands";
 import TopBrands from "../topBrands/topBrands";
 import NewBrands from "../NewBrands/NewBrands";
 import AnotherBrands from "../AnotherBrands/AnotherBrands";
-
 import ModalWindow from "../modalWindow/ModalWindow";
 import { useTranslation } from "react-i18next";
 import twemoji from "twemoji";
@@ -12,23 +10,22 @@ import TopBrandsOfYear from "../TopBrandsOfYear/TopBrandsOfYear";
 import DoubleBrands from "../DoubleBrands/DoubleBrands";
 import DoubleBrands2 from "../DoubleBrands2/DoubleBrands2";
 import CountryBanner from "../CountryBanner/CountryBanner";
-
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 
 function ChildComponent() {
   const [ipData, setIpData] = useState(null);
   const [ipDataCode, setIpDataCode] = useState(null);
   const [newUrl, setNewUrl] = useState("");
   const [source, setSource] = useState("");
-
   const [selectedCountry, setSelectedCountry] = useState("");
 
   const { t, i18n } = useTranslation();
+  const selectRef = useRef(null);
 
   const countryOptions = [
     { code: "au", name: "Australia", flag: "🇦🇺" },
@@ -69,9 +66,7 @@ function ChildComponent() {
     { code: "fi", name: "Finland", flag: "🇫🇮" },
   ];
 
-
   useEffect(() => {
-    // Запрос к API с использованием fetch
     fetch(
       "https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW"
     )
@@ -88,46 +83,54 @@ function ChildComponent() {
 
   useEffect(() => {
     const searchParams = new URLSearchParams(window.location.search);
-
-    // Удаляем параметр 'brand', если он есть
     searchParams.delete("brand");
-
-    // Получаем параметр 'keyword'
     const currentSource = searchParams.get("keyword");
-    let sourceValue = "0"; // Значение по умолчанию для 'source'
+    let sourceValue = "0";
 
-    // Проверяем, содержит ли 'keyword' идентификатор партнера
     if (currentSource) {
       const match = currentSource.match(/partner(_)?\d+/);
       if (match) {
-        sourceValue = match[0]; // Извлекаем идентификатор партнера
-        setSource(sourceValue); // Обновляем состояние 'source' с найденным значением
+        sourceValue = match[0];
+        setSource(sourceValue);
       } else {
-        setSource("0"); // Обновляем состояние 'source', если идентификатор партнера не найден
+        setSource("0");
       }
     } else {
-      setSource("0"); // Обновляем состояние 'source', если параметр 'keyword' отсутствует
+      setSource("0");
     }
-
-    // На этом этапе 'sourceValue' уже содержит корректное значение, поэтому устанавливаем его в параметры
     searchParams.set("source", sourceValue);
-
-    // Устанавливаем параметр 'creative_id' с пустым значением
     searchParams.set("creative_id", "");
-
-    // Формируем строку запроса
     const queryString = `?${searchParams.toString()}`;
-
-    // Обновляем URL с новой строкой запроса
     setNewUrl(queryString);
   }, []);
 
-  // Добавьте обработчик изменения selectedCountry
   const handleCountryChange = (country) => {
     setSelectedCountry(country);
-    // Сохранить в localStorage
     localStorage.setItem("selectedCountry", country);
+    document.documentElement.classList.remove("fixed-position");
+    console.log("handleCountryChange")
+
   };
+
+  const handleMouseDown = () => {
+    document.documentElement.classList.add("fixed-position");
+    console.log("handleMouseDown")
+
+  };
+
+  const handleClickOutside = (event) => {
+    if (selectRef.current && !selectRef.current.contains(event.target)) {
+      document.documentElement.classList.remove("fixed-position");
+      console.log("handleClickOutside")
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div>
@@ -139,82 +142,72 @@ function ChildComponent() {
         selectedCountry={selectedCountry}
       />
       {source === "partner1043" && (
-        <div className="select-brand container ">
-          <p>{t("select")}</p>
-          <select
-            id="countrySelect"
-            value={selectedCountry}
-            // onChange={(e) => setSelectedCountry(e.target.value)}
-            onChange={(e) => handleCountryChange(e.target.value)}
-          >
-            {countryOptions1043.map((country, index) => (
-              <option
-                key={index}
-                value={country.code}
-                selected={country.code === ipDataCode}
-                class={country.code}
-              >
-                {country.flag} {country.name}
-              </option>
-            ))}
-          </select>
-        </div>
+        <div className="select-brand container">
+        <Box sx={{ m: 1, minWidth: 300 }}>
+          <FormControl fullWidth>
+            <InputLabel>{t("select")}</InputLabel>
+            <Select
+              id="countrySelect"
+              value={selectedCountry}
+              label={t("select")}
+              ref={selectRef}
+              onMouseDown={handleMouseDown}
+              onChange={(e) => handleCountryChange(e.target.value)}
+            >
+              {countryOptions.map((country, index) => (
+                <MenuItem
+                  key={index}
+                  value={country.code}
+                  selected={country.code === ipDataCode}
+                >
+                  <div className={country.code}></div>
+                  {country.name}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </Box>
+      </div>
       )}
       {source === "partner1044" && (
         <div className="select-brand container">
-          <p>{t("select")}</p>
-          <select
-            id="countrySelect"
-            value={selectedCountry}
-            // onChange={(e) => setSelectedCountry(e.target.value)}
-            onChange={(e) => handleCountryChange(e.target.value)}
-          >
-            {countryOptions1044.map((country, index) => (
-              <option
-                key={index}
-                value={country.code}
-                selected={country.code === ipDataCode}
-                class={country.code}
-              >
-                {country.flag} {country.name}
-              </option>
-            ))}
-          </select>
-        </div>
+        <Box sx={{ m: 1, minWidth: 300 }}>
+          <FormControl fullWidth>
+            <InputLabel>{t("select")}</InputLabel>
+            <Select
+              id="countrySelect"
+              value={selectedCountry}
+              label={t("select")}
+              ref={selectRef}
+              onMouseDown={handleMouseDown}
+              onChange={(e) => handleCountryChange(e.target.value)}
+            >
+              {countryOptions.map((country, index) => (
+                <MenuItem
+                  key={index}
+                  value={country.code}
+                  selected={country.code === ipDataCode}
+                >
+                  <div className={country.code}></div>
+                  {country.name}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </Box>
+      </div>
       )}
       {source !== "partner1044" && source !== "partner1043" && (
-        // <div className="select-brand container">
-        //   <p>{t("select")}</p>
-        //   <select
-        //     id="countrySelect"
-        //     value={selectedCountry}
-        //     // onChange={(e) => setSelectedCountry(e.target.value)}
-        //     onChange={(e) => handleCountryChange(e.target.value)}
-        //   >
-        //     {countryOptions.map((country, index) => (
-        //       <option
-        //         key={index}
-        //         value={country.code}
-        //         selected={country.code === ipDataCode}
-        //       >
-        //         <div class={country.code}></div>
-        //         {country.name}
-        //       </option>
-        //     ))}
-        //   </select>
-        // </div>
-
         <div className="select-brand container">
-          <Box sx={{
-            m: 1,
-            minWidth: 300
-          }}>
+          <Box sx={{ m: 1, minWidth: 300 }}>
             <FormControl fullWidth>
               <InputLabel>{t("select")}</InputLabel>
               <Select
                 id="countrySelect"
                 value={selectedCountry}
                 label={t("select")}
+                ref={selectRef}
+                onMouseDown={handleMouseDown}
                 onChange={(e) => handleCountryChange(e.target.value)}
               >
                 {countryOptions.map((country, index) => (
@@ -223,7 +216,7 @@ function ChildComponent() {
                     value={country.code}
                     selected={country.code === ipDataCode}
                   >
-                    <div class={country.code}></div>
+                    <div className={country.code}></div>
                     {country.name}
                   </MenuItem>
                 ))}
@@ -232,8 +225,6 @@ function ChildComponent() {
           </Box>
         </div>
       )}
-
-
 
       <TopBrands
         newUrl={newUrl}
