@@ -174,7 +174,7 @@ function OtherBrands({
               <div className="col-12 mt-5 text-center" data-aos="fade-up">
                 <div className="group btn-wrap justify-content-center">
                   {isAllElements ? (
-                    <a href={`https://topbon.us/${newUrl}L_summer_2`} className="button-drawing type--A" target="_blank">
+                    <a href={`https://topbon.us/${newUrl}L_vegas_2`} className="button-drawing type--A" target="_blank">
                       <button className="btn-primary custom-btn-primary">{t("More offers")}</button>
 
                     </a>
