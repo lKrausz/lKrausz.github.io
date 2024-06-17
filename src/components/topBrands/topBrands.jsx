@@ -144,7 +144,7 @@ function TopBrands({
             setData(showData(filteredDataWithTopData.slice(0, arrLength)));
           } else {
             setData(showData(filteredDataWithTopData));
-          } 
+          }
           setLoading(false);
 
           setTopData([...topData]);
@@ -189,7 +189,7 @@ function TopBrands({
                 </div>
               </div>
             </div>
-            {/* <OwlCarousel className='owl-carousel owl-theme' loop margin={10} id="carouselTrending" nav  {...options}> */}
+            <OwlCarousel className='owl-carousel owl-theme' loop margin={10} id="carouselTrending" nav  {...options}>
 
               {data.map((rowData, index) => (
                 <div className="item mb-3 mb-lg-0" key={index} data-aos="fade-up">
@@ -214,7 +214,7 @@ function TopBrands({
                 </div>
               )
               )}
-            {/* </OwlCarousel> */}
+            </OwlCarousel>
           </div>
         </section>
       )}
