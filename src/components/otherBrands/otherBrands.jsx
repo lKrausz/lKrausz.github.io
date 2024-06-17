@@ -19,6 +19,7 @@ function OtherBrands({
   const [otherData, setOtherData] = useState([]);
   // const [visibleBrands, setVisibleBrands] = useState(8);
   const [step, setStep] = useState(3);
+  const [isAllElements, setAllElements] = useState(false);
 
 
   // const handleShowMore = () => {
@@ -33,11 +34,17 @@ function OtherBrands({
   function showData(array) {
     const showedArray = array.slice();
     //Обрезка массива до step элементов, чтобы было по шаблону
-    // if (showedArray.length > step) {
-    //   return showedArray.slice(0, step);
-    // } else {
-    // }
+    if (showedArray.length > step) {
+      setAllElements(false)
+      return showedArray.slice(0, step);
+    } else {
+      setAllElements(true)
+    }
     return showedArray;
+  }
+
+  function loadMoreItems() {
+    setStep(prevIndex => prevIndex + 3);
   }
 
   useEffect(() => {
@@ -142,7 +149,6 @@ function OtherBrands({
             </div>
             <div className="row mt-5 mb-lg-5 position-relative">
               <div className="line"></div>
-
               {otherData.length > 0 ? (
                 otherData.map((rowData, index) => (
                   <div key={index} className="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up">
@@ -167,9 +173,17 @@ function OtherBrands({
               )}
               <div className="col-12 mt-5 text-center" data-aos="fade-up">
                 <div className="group btn-wrap justify-content-center">
-                  <a href={`https://topbon.us/${newUrl}L_vegas_2`} className="button-drawing type--A" target="_blank">
-                    <button className="btn-primary custom-btn-primary">{t("More offers")}</button>
-                  </a>
+                  {isAllElements ? (
+                    <a href={`https://topbon.us/${newUrl}L_summer_2`} className="button-drawing type--A" target="_blank">
+                      <button className="btn-primary custom-btn-primary">{t("More offers")}</button>
+
+                    </a>
+                  ) : (
+                    <a className="button-drawing type--A" target="_blank"
+                      onClick={loadMoreItems}>
+                      <button className="btn-primary custom-btn-primary">{t("Show more")}</button>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
