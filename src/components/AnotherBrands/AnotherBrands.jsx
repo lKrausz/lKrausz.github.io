@@ -1,12 +1,20 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import image from "../../../src/img/joker2.png";
+
+import heroPic from "../../images/hero/hero-pic.png";
+
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+import logo1 from "../../images/partner/logo01.png";
+import logo2 from "../../images/partner/logo02.png";
+import logo3 from "../../images/partner/logo03.png";
+import logo4 from "../../images/partner/logo04.png";
+import logo5 from "../../images/partner/logo05.png";
 
 
-
-
-// import fwb from "../../images/fwb.png";
 
 function AnotherBrands({
   newUrl,
@@ -25,10 +33,10 @@ function AnotherBrands({
     setVisibleBrands((prevVisibleBrands) => prevVisibleBrands + 8);
   };
 
-  const apiOld = "https://pickbonus.myawardwallet.com/api/brands/read.php";
-  const apiNew = "https://pickbonus.myawardwallet.com/api/brands/read2.php";
-  const api1043 = "https://pickbonus.myawardwallet.com/api/brands/read3.php";
-  const api1044 = "https://pickbonus.myawardwallet.com/api/brands/read4.php";
+  const apiOld = "https://pickbonus.myawardwallet.com/api/brandsNew/read.php";
+  const apiNew = "https://pickbonus.myawardwallet.com/api/brandsNew2/read.php";
+  const api1043 = "https://pickbonus.myawardwallet.com/api/brandsNew3/read.php";
+  const api1044 = "https://pickbonus.myawardwallet.com/api/brandsNew4/read.php";
 
   function shuffleArray(array) {
     const shuffledArray = array.slice();
@@ -41,6 +49,7 @@ function AnotherBrands({
     }
     return shuffledArray;
   }
+
 
   useEffect(() => {
     const geo = selectedCountry.toUpperCase();
@@ -70,26 +79,38 @@ function AnotherBrands({
           let filteredDataOther = [];
 
           if (geo) {
-            filteredDataOther = responseData.brands.filter(
+            filteredDataOther = responseData.brandsNew.filter(
               (rowData) =>
                 rowData.GEO === geo &&
                 rowData["CurrentStatus"] === "Ongoing" &&
                 rowData["CasinoBrand"] !== "Mirax (FS)" &&
                 rowData["CasinoBrand"] !== "Katsubet (FS)" &&
                 rowData["CasinoBrand"] !== "7Bit (FS)" &&
-                rowData["Segment2"] === "Premium"
+                rowData["High_hybrid"] === "1"
             );
           } else {
-            filteredDataOther = responseData.brands.filter(
+            filteredDataOther = responseData.brandsNew.filter(
               (rowData) =>
                 rowData.GEO === ipDataCode &&
-                rowData["Current Status"] === "Ongoing" &&
+                rowData["CurrentStatus"] === "Ongoing" &&
                 rowData["CasinoBrand"] !== "Mirax (FS)" &&
                 rowData["CasinoBrand"] !== "Katsubet (FS)" &&
                 rowData["CasinoBrand"] !== "7Bit (FS)" &&
-                rowData["Segment2"] === "Premium"
+                rowData["High_hybrid"] === "1"
             );
           }
+          if (geo === "ALL") {
+            filteredDataOther = responseData.brandsNew.filter(
+              (rowData) =>
+                rowData.GEO === geo &&
+                rowData["CurrentStatus"] === "Ongoing" &&
+                rowData["CasinoBrand"] !== "Mirax (FS)" &&
+                rowData["CasinoBrand"] !== "Katsubet (FS)" &&
+                rowData["CasinoBrand"] !== "7Bit (FS)" &&
+                rowData["FirstPriority"] === "1"
+            );
+          }
+
 
           // Перемешиваем данные перед отображением
           setOtherData(shuffleArray(filteredDataOther));
@@ -113,39 +134,107 @@ function AnotherBrands({
     }
   }, [ipDataCode, currentLanguage, selectedCountry, source]);
 
-  // ...
+  const options = {
+    loop: true,
+    margin: 10,
+    responsive: {
+      0: {
+        items: 2
+      },
+      600: {
+        items: 3
+      },
+      1100: {
+        items: 5
+      }
+    }
+  };
 
   return (
 
-    <section id="home" class="hero-section go-zoom-1">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="hero-content top-greadient">
-                    <span class="wow fadeInLeft mb-20" data-wow-delay=".2s"> {t("Why So Serious? Grab Your Bonus Now!")}</span>
-                    <h4 class="wow fadeInUp" data-wow-delay=".4s">
-                      {t("We've handpicked the most exclusive and jaw-dropping bonuses from top-tier online casinos just for you. The Joker's treasure trove of rewards is just a click away!")}
-                    </h4>
-                    
-                </div>
+    // <section id="home" className="hero-section go-zoom-1">
+    //   <div className="container">
+    //     <div className="row align-items-center">
+    //       <div className="col-lg-12">
+    //         <div className="hero-content top-greadient">
+    //           <h1 className="wow fadeInLeft mb-20" data-wow-delay=".2s"> {t("Hello, summer!")}</h1>
+    //           <h4 className="wow fadeInUp" data-wow-delay=".4s">
+    //             {t("Discover top online casino offers, exclusive bonuses, free spins, and more. Try your luck with these sizzling summer deals!")}
+    //           </h4>
+
+    //         </div>
+    //         {otherData.length > 0 ? (
+    //           otherData.slice(0, 1).map((rowData, index) => (
+    //             <a key={index} target="_blank" href={rowData["GoBig"] + newUrl + "L_enchanted-forest_random"} className="button-drawing type--A">
+    //               <div className="button__line"></div>
+    //               <div className="button__line"></div>
+    //               <span className="button__text">{t("TRY YOUR LUCK")}</span>
+    //               <div className="button__drow1"></div>
+    //               <div className="button__drow2"></div>
+    //             </a>
+    //           ))
+    //         ) : (
+    //           <p className="no-available-brands">{t("No brands available for your country")}</p>
+    //         )}
+    //       </div>
+    //     </div>
+    //   </div>
+    // </section>
+    <section className="hero" id="home">
+      <div className="bground">
+        <div className="container mt-5">
+          <div className="row align-items-center">
+            <div className="col-12 col-lg-6 position-relative align-self-center" data-aos="fade-up">
+              <p className="sub-heading mt-5 mb-3 fs-4 fw-bold theme-text-primary">Discover your next Play Games</p>
+              <h1 className="display-1 text-uppercase mb-3 font-black max theme-text-white">Gaming World</h1>
+              <p className="fs-5 mb-0 theme-text-white">High Quality Video Online Games</p>
+              <div className="group mt-5 btn-wrap">
                 {otherData.length > 0 ? (
-                      otherData.slice(0, 1).map((rowData, index) => (
-                            <a key={index} target="_blank" href={rowData["GoBig"] + newUrl + "L_enchanted-forest_random"} className="main-btn btn-hover wow fadeInUp" >
-                                <span>{t("TRY YOUR LUCK")}</span>
-                            </a>
-                               ))
-                               ) : (
-                                 <p className="ti">{t("No brands available for your country")}</p>
-                               )}
+                  otherData.slice(0, 1).map((rowData, index) => (
+                    <a key={index} target="_blank" href={rowData["GoBig"] + newUrl + "L_vegas_random"}>
+                      <button className="btn-primary custom-btn-primary">Play Now</button>
+                    </a>
+                  ))
+                ) : (
+                  <p className="no-available-brands">{t("No brands available for your country")}</p>
+                )}
+                {/* <span className="ms-3">
+                <button className="btn custom-btn-secondary icon-wrapper" type="submit">
+                  <i className="bi bi-play-fill fs-4"></i>
+                </button>
+              </span> */}
+              </div>
             </div>
-            <div class="col-lg-6">
-                <div class="hero-img wow fadeInRight" data-wow-delay=".5s">
-                <img src={`.${image}`} alt={`.${image}`} />
-                </div>
+            <div className="col-12 col-lg-6 position-relative" data-aos="fade-down">
+              <figure className="mb-0 shape-wrap">
+                <img src={heroPic} alt={heroPic} className="img-fluid obj-1" />
+              </figure>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+        <div className="container my-5">
+          <OwlCarousel className='owl-carousel owl-theme' id="carouselPartner" loop margin={10} nav  {...options}>
+
+            <div className="col w-auto">
+              <img src={logo1} alt={logo1} />
+            </div>
+            <div className="col w-auto">
+              <img src={logo2} alt={logo2} />
+            </div>
+            <div className="col w-auto">
+              <img src={logo3} alt={logo3} />
+            </div>
+            <div className="col w-auto">
+              <img src={logo4} alt={logo4} />
+            </div>
+            <div className="col w-auto">
+              <img src={logo5} alt={logo5} />
+            </div>
+          </OwlCarousel>;
+
+        </div>
+      </div>
+    </section>
 
   );
 }

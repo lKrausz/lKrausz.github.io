@@ -6,6 +6,25 @@ import { useTranslation } from "react-i18next";
 import Loader from "../Loader/Loader";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+const options = {
+  loop: true,
+  margin: 10,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    1100: {
+      items: 3
+    }
+  }
+};
 
 function TopBrands({
   newUrl,
@@ -18,64 +37,33 @@ function TopBrands({
   const { t } = useTranslation();
   const [data, setData] = useState([]);
   const [topData, setTopData] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [step, setStep] = useState(4);
-  const [isAllElements, setAllElements] = useState(false);
-
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 768, // Порог для мобильных устройств
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      // Дополнительные настройки для других порогов медиа-запросов
-    ],
-  };
+  const [loading, setLoading] = useState(true);
 
   const urlParams = new URLSearchParams(window.location.search);
   const brandValue = urlParams.get("brand");
 
-  const apiOld = "https://pickbonus.myawardwallet.com/api/brands/read.php";
-  const apiNew = "https://pickbonus.myawardwallet.com/api/brands/read2.php";
-  const api1043 = "https://pickbonus.myawardwallet.com/api/brands/read3.php";
-  const api1044 = "https://pickbonus.myawardwallet.com/api/brands/read4.php";
+  const apiOld = "https://pickbonus.myawardwallet.com/api/brandsNew/read.php";
+  const apiNew = "https://pickbonus.myawardwallet.com/api/brandsNew2/read.php";
+  const api1043 = "https://pickbonus.myawardwallet.com/api/brandsNew3/read.php";
+  const api1044 = "https://pickbonus.myawardwallet.com/api/brandsNew4/read.php";
 
-  function shuffleArray(array) {
-    const shuffledArray = array.slice(); // Создаем копию массива
-    // for (let i = shuffledArray.length - 1; i > 0; i--) {
-    //   const j = Math.floor(Math.random() * (i + 1));
-    //   [shuffledArray[i], shuffledArray[j]] = [
-    //     shuffledArray[j],
-    //     shuffledArray[i],
-    //   ];
-    // }
+  function showData(array) {
+    const showedArray = array.slice(); // Создаем копию массива
     //Обрезка массива до step элементов, чтобы было по шаблону
-    if (shuffledArray.length > step) {
-      setAllElements(false)
-      return shuffledArray.slice(0, step);
-    } else {
-      setAllElements(true)
-    }
-    return shuffledArray;
+    // if (showedArray.length > step) {
+    //   setAllElements(false)
+    //   return showedArray.slice(0, step);
+    // } else {
+    //   setAllElements(true)
+    // }
+    return showedArray;
   }
 
-  function loadMoreItems() {
-    setStep(prevIndex => prevIndex + 4);
-  }
-
-  console.log("============", source);
+  console.log("source:", source);
   useEffect(() => {
     const geo = selectedCountry.toUpperCase();
     console.log("GEO", geo);
     const fetchData = async () => {
-      setIsLoading(true);
       try {
         let url;
         switch (source) {
@@ -95,32 +83,43 @@ function TopBrands({
         const res = await fetch(url);
         if (res.ok) {
           const responseData = await res.json();
-          // const dataArray = Object.values(responseData.brands);
+          // const dataArray = Object.values(responseData.brandsNew);
           let filteredData = [];
-          console.log("respons3dData", responseData.brands);
           if (geo) {
-            filteredData = responseData.brands.filter(
+            filteredData = responseData.brandsNew.filter(
               (rowData) =>
                 rowData.GEO === geo &&
                 rowData["CurrentStatus"] === "Ongoing" &&
                 rowData["CasinoBrand"] !== "Mirax (FS)" &&
                 rowData["CasinoBrand"] !== "Katsubet (FS)" &&
                 rowData["CasinoBrand"] !== "7Bit (FS)" &&
-                rowData["Segment2"] === "Sandbox"
+                rowData["High_hybrid"] === "1"
             );
           } else {
-            filteredData = responseData.brands.filter(
+            filteredData = responseData.brandsNew.filter(
               (rowData) =>
                 rowData.GEO === ipDataCode &&
                 rowData["CurrentStatus"] === "Ongoing" &&
                 rowData["CasinoBrand"] !== "Mirax (FS)" &&
                 rowData["CasinoBrand"] !== "Katsubet (FS)" &&
                 rowData["CasinoBrand"] !== "7Bit (FS)" &&
-                rowData["Segment2"] === "Sandbox"
+                rowData["High_hybrid"] === "1"
+            );
+          }
+          if (geo === "ALL") {
+            filteredData = responseData.brandsNew.filter(
+              (rowData) =>
+                rowData.GEO === geo &&
+                rowData["CurrentStatus"] === "Ongoing" &&
+                rowData["CasinoBrand"] !== "Mirax (FS)" &&
+                rowData["CasinoBrand"] !== "Katsubet (FS)" &&
+                rowData["CasinoBrand"] !== "7Bit (FS)" &&
+                rowData["Trendsetting"] === "1"
             );
           }
 
-          const topData = responseData.brands
+
+          const topData = responseData.brandsNew
             .filter((rowData) => rowData.Tech === brandValue)
             .map((item) => ({
               ...item,
@@ -139,11 +138,16 @@ function TopBrands({
             return !existsInTopData;
           });
 
-          // Перемешиваем данные перед отображением
-          setData(shuffleArray(filteredDataWithTopData));
+          const arrLength = filteredDataWithTopData.length / 2
+
+          if (geo !== "ALL") {
+            setData(showData(filteredDataWithTopData.slice(0, arrLength)));
+          } else {
+            setData(showData(filteredDataWithTopData));
+          } 
+          setLoading(false);
 
           setTopData([...topData]);
-          setIsLoading(false);
 
           // Если нет брендов, вызывать setSelectedCountry
           if (filteredDataWithTopData.length === 0) {
@@ -155,73 +159,62 @@ function TopBrands({
         }
       } catch (error) {
         console.error("An error occurred:", error);
+        setLoading(false);
       }
     };
 
     if ((geo && currentLanguage) || (!geo && ipDataCode && currentLanguage)) {
       fetchData();
     }
-  }, [ipDataCode, brandValue, currentLanguage, selectedCountry, source, step, isAllElements]);
+  }, [ipDataCode, brandValue, currentLanguage, selectedCountry, source]);
 
   const combinedData = [...topData, ...data];
-  console.log("combined", combinedData);
 
   return (
-    <div className="mtt10">
+
+    <div>
       {data.length > 0 && (
-        <section id="top-brand" class="game-section pt-30 pb-55">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10">
-                <div class="section-title text-center right-greadient mb-50">
-                  <h2 class="mb-25">{t("Joker's New Favorites: Fresh and Exciting Casinos")}</h2>
+        <section className="trending py-5" id="experience">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-12 col-lg-8 mb-5 mb-lg-0">
+                <p className="mt-5 mb-3 theme-text-primary fs-4 fw-bold" data-aos="fade-up">Our Games</p>
+                <h2 className="display-1 font-black mb-3 heading" data-aos="fade-up">Trending Games</h2>
+              </div>
+              <div className="col-12 col-lg-4">
+                <div className="owl-theme">
+                  <div className="owl-controls">
+                    <div className="custom-nav owl-nav"></div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="row">
+            {/* <OwlCarousel className='owl-carousel owl-theme' loop margin={10} id="carouselTrending" nav  {...options}> */}
+
               {data.map((rowData, index) => (
-                <div class="col-xl-3 col-md-6 col-sm-6" key={index}>
-                  <div class="single-game box-inner-shadow">
-                    <div className="game_thumb">
-                      <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
-
-                      <p class="mb-15">{rowData["OurOfferContent"]}</p>
-
-                      <div className="game__overlay">
-                        <a class="play-btn btn-hover" href={
-                          rowData["GoBig"] +
-                          newUrl +
-                          "L_enchanted-forest_1"
-                        }>
-                          {t("Play Now!")}
-                        </a>
+                <div className="item mb-3 mb-lg-0" key={index} data-aos="fade-up">
+                  <div className="row g-0 list">
+                    <div className="col-12 col-md-4 col-xxl-4">
+                      <figure className="image-icon mb-0">
+                        <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
+                      </figure>
+                    </div>
+                    <div className="col-12 col-md-8 col-xxl-8">
+                      <div className="p-3">
+                        <h4 className="d-block fs-6 fw-bold mb-2 theme-text-secondary"><span>{rowData["CasinoBrand"]}</span></h4>
+                        <div className="d-block fs-8 mb-2 theme-text-secondary">{rowData["OurOfferContent"]}</div>
+                        <div className="d-flex align-items-center justify-content-between btn-wrap mt-2">
+                          <a href={rowData["GoBig"] + newUrl + "L_vegas_1"}>
+                            <button className="btn-primary">Play Now</button>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               )
               )}
-            </div>
-            <div class="view-all-btn text-center pt-30">
-              {isAllElements ? (
-                <a
-                  target="_blank"
-                  href={`https://topbon.us/${newUrl}L_enchanted-forest_1`}
-                  className="main-btn btn-hover"
-                >
-                  <span>{t("More offers")}</span>
-                </a>
-              ) : (
-                <a
-                  target="_blank"
-                  onClick={loadMoreItems}
-                  className="main-btn btn-hover"
-                >
-                  <span>{t("Show more")}</span>
-                </a>
-              )}
-
-            </div>
+            {/* </OwlCarousel> */}
           </div>
         </section>
       )}

@@ -23,13 +23,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $send = mail ($to, $subject, $message, $headers);
     if ($send == 'true')
     {
-    echo '<center><p class="success animated fadeInUp"><span>Спасибо за заявку!</span><br>
+    echo '<center><p className="success animated fadeInUp"><span>Спасибо за заявку!</span><br>
     В ближайшее время наш<br> менеджер Вам перезвонит<br>
     <a href="index.html">Закрыть</a></p></center>';
     }
     else 
     {
-    echo '<center><p class="fail"><b>Ошибка. Сообщение не отправлено!</b></p></center>';
+    echo '<center><p className="fail"><b>Ошибка. Сообщение не отправлено!</b></p></center>';
     }
 } else {
     http_response_code(403);
