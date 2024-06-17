@@ -136,7 +136,7 @@ function AnotherBrands({
 
   const options = {
     loop: true,
-    margin: 10,
+    margin: 40,
     responsive: {
       0: {
         items: 2

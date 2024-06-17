@@ -278,3 +278,12 @@ p {
 .image-icon {
   padding: 5px; 
 }
+
+.owl-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.owl-item {
+ height: 100px !important;
+}
