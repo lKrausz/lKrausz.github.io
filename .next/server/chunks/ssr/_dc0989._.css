@@ -235,11 +235,11 @@ header nav button {
 
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translate3D(0);
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translate3D(-100%);
   }
 }
 
