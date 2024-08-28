@@ -1,0 +1,97 @@
+/* [project]/components/Banners_tailwind/Next_event_banner/styled.component.css [app-ssr] (css) */
+.banner-event {
+  background: #201845;
+  background: url("/newimages/banner-long.png") center no-repeat;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 4px 35px #fff3;
+  min-height: 189px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner-event h3 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 50px;
+}
+
+.banner-event h3 span {
+  font-size: 50px;
+  color: #ff8f1f;
+}
+
+.banner-event-p {
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.banner-event-p span {
+  color: #ff8f1f;
+}
+
+.banner-event:after {
+  content: "";
+  position: absolute;
+  width: 1302px;
+  height: 177px;
+  left: -56px;
+  top: 6px;
+  background: url("/newimages/banner-jack.png") center no-repeat;
+  z-index: -1;
+}
+
+.banner-event:before {
+  content: "";
+  position: absolute;
+  width: 1420px;
+  height: 444px;
+  left: -103px;
+  top: -121px;
+  background: url("/newimages/banner-dices.png") center no-repeat;
+  z-index: 0;
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  .banner-event {
+    background-size: cover;
+    padding: 20px 10px;
+  }
+
+  .banner-event:before {
+    display: none;
+  }
+
+  .banner-event h3 {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .banner-event:after {
+    display: none;
+  }
+
+  .banner-event-p {
+    margin-top: 20px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .banner-event {
+    background: url("/newimages/banner-long_small.png") center no-repeat;
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=components_Banners_tailwind_Next_event_banner_styled_component_31ffea.css.map*/

@@ -1,0 +1,628 @@
+/* FILTERED COMPONENTS */
+
+.filter-brands .basis-\[24\%\] {
+  max-width: 100%;
+}
+.filter-brands .card-brand-banner {
+  border-radius: 30px;
+  max-width: 380px;
+  width: 100%;
+  height: 328px;
+  background-size: cover !important;
+  margin-bottom: 12px !important;
+}
+.filter-brands .card-brand-banner:nth-child(3n + 1) {
+  background: url(/newimages/first-banner.png) no-repeat center !important;
+}
+.filter-brands .card-brand-banner:nth-child(3n + 2) {
+  background: url(/newimages/second-banner.png) no-repeat center !important;
+}
+.filter-brands .card-brand-banner:nth-child(3n + 3) {
+  background: url(/newimages/third-banner.png) no-repeat center !important;
+}
+
+.filter-brands .brandImage a img {
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.page-bonuses .filter-brands h2,
+.page-bonuses .filter-brands p {
+  color: #fff;
+}
+
+.filter-brands .card-brand-filtered .brandImage a img {
+  max-height: 85px !important;
+}
+
+.filter-brands .card-brand-filtered .buttons {
+  flex-direction: column;
+}
+
+.filter-brands .card-brand-filtered .buttons .btn {
+  width: 100%;
+  padding: 12px 15px 8px !important;
+  box-shadow: none !important;
+  font-size: 18px;
+}
+.filter-brands .card-brand-filtered .buttons .btn-secondary {
+  background: transparent;
+  border: 1px solid #65676a;
+  color: #65676a;
+  font-size: 15px;
+}
+.filter-brands .card-brand-filtered .buttons .btn-secondary:hover {
+  border-color: #128722;
+  color: #128722;
+}
+
+.filter-brands .card-brand-banner .brandImage a img {
+  max-height: 80px !important;
+}
+.filter-brands .card-brand-banner .brandImage {
+  max-height: initial !important;
+}
+.filter-brands .card-brand-banner:nth-child(1) {
+  background: linear-gradient(to bottom, #906be8, #e278ed);
+}
+.filter-brands .card-brand-banner:nth-child(2) {
+  background: linear-gradient(to bottom, #496cf5, #8bcef7);
+}
+.filter-brands .card-brand-banner:nth-child(3) {
+  background: linear-gradient(to bottom, #296ab1, #2a9bca);
+}
+
+.filter-brands .basis-\[60\%\] {
+  flex-basis: 100%;
+}
+.filter-brands .basis-\[75\%\] {
+  flex-basis: 75%;
+}
+.filter-brands .basis-\[24\%\] {
+  flex-basis: 24%;
+}
+.filtered-payments .basis-\[10\%\] {
+  flex-basis: 20%;
+  padding: 5px !important;
+}
+.filtered-providers .basis-\[7\.69\%\] {
+  flex-basis: 20%;
+  padding: 5px !important;
+}
+.custom-bonuses,
+.other-custom-bonuses {
+  background-image: none !important;
+}
+.other-custom-bonuses {
+  padding-bottom: 0;
+}
+
+.overlay-filter {
+  position: relative;
+  min-height: 50vh;
+}
+
+/* ALL COMPONENTS */
+
+@media (min-width: 768px) and (max-width: 1259px) {
+  .awesome-slider {
+    max-height: 214px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .awesome-slider {
+    max-height: 214px;
+  }
+  .awesome .slick-slide {
+    margin-right: 0 !important;
+    width: initial;
+    margin-left: 0 !important;
+  }
+
+  .awesome .slick-track,
+  .awesome .slick-list {
+    max-height: 260px;
+  }
+  .awesome .slick-slide .p-3.text-center.flex.items-center {
+    max-width: 250px;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .filter-brands .slick-slide:nth-child(3n + 1) .card-brand-banner {
+    background: url(/newimages/first-banner_small.png) no-repeat center !important;
+  }
+  .filter-brands .slick-slide:nth-child(3n + 2) .card-brand-banner {
+    background: url(/newimages/second-banner_small.png) no-repeat center !important;
+  }
+  .filter-brands .slick-slide:nth-child(3n + 3) .card-brand-banner {
+    background: url(/newimages/third-banner_small.png) no-repeat center !important;
+  }
+}
+
+.card-brand-filtered {
+  border-radius: 30px;
+  border-top: 2.5px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 2.5px solid rgba(255, 255, 255, 0.4);
+  background: linear-gradient(
+    161deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 101.7%
+  );
+  backdrop-filter: blur(17.915000915527344px);
+  padding: 46px 32px;
+  flex-wrap: nowrap;
+}
+.card-brand-filtered .review-bonus {
+  min-height: auto;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+.card-brand-banner .review-bonus {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.card-36 {
+  margin-left: 15px;
+}
+.custom-list-item {
+  border-radius: 10px;
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  background: linear-gradient(
+    161deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 101.7%
+  );
+  backdrop-filter: blur(17.915000915527344px);
+  padding: 15px 17px;
+  margin-bottom: 6px !important;
+  cursor: pointer;
+}
+.custom-list-item .title > span {
+  color: #fff;
+  margin-left: 13px !important;
+  margin-top: 0 !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.card-brand-filtered .review-pros li {
+  margin-top: 5px;
+  color: #fff;
+}
+.card-brand-filtered .review-pros li::before {
+  content: "";
+  font-weight: 900;
+  position: absolute;
+  left: -5px;
+  background: #ff8f1f;
+  border-radius: 50%;
+  font-size: 15px;
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  top: 9px;
+}
+.card-brand-filtered .w40 {
+  min-width: 40px !important;
+  max-width: 40px !important;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .card-brand-filtered > div {
+    flex-direction: column;
+  }
+  .card-brand-filtered .otherContent {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+
+  .card-brand-filtered {
+    flex-direction: column;
+  }
+  .card-brand-filtered .basis-\[63\%\],
+  .card-brand-filtered .basis-\[36\%\] {
+    flex-basis: initial;
+  }
+}
+
+.withdrawal-limits li {
+  color: #1d2730;
+  width: initial;
+  height: initial;
+  margin-bottom: 0;
+  margin-right: 0;
+  border: none !important;
+}
+.withdrawal-limits .title {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  margin-right: 0 !important;
+}
+.withdrawal-limits .title span {
+  font-weight: 500;
+}
+.withdrawal-limits .list-circle-check,
+.withdrawal-limits ul {
+  margin-top: 0;
+}
+
+.withdrawal .withdrawal.flex.mt-2 {
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+.depimg {
+  margin-right: 5px !important;
+}
+.withdrawal .countries span {
+  color: #fff;
+}
+.withdrawal .wp-block-columns li {
+  width: 100%;
+}
+.withdrawal h4 {
+  display: none;
+}
+
+.withdrawal ul {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.withdrawal li {
+  width: 70px;
+  height: 45px;
+  color: transparent;
+  margin-right: 3px;
+  border: 1px solid rgba(123, 140, 152, 0.2);
+  margin-bottom: 3px;
+}
+.withdrawal .countries {
+  border-top: 1px solid rgba(123, 140, 152, 0.2);
+  padding-top: 12px;
+  margin-top: 7px;
+}
+.withdrawal li {
+  width: 24%;
+}
+
+.card-brand-new .review-pros-cons li {
+  margin-bottom: 4px;
+}
+.card-brand-new .review-pros-cons li {
+  font-size: 12px;
+  line-height: 15px;
+}
+.review-pros,
+.review-cons {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.review-pros li::before {
+  content: "+";
+  font-weight: 900;
+  position: absolute;
+  left: -10px;
+  background: #128722;
+  color: #fff;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1px;
+}
+.review-pros li,
+.review-cons li {
+  padding-left: 10px;
+  flex-basis: 45%;
+  position: relative;
+  /* margin-bottom: 3px; */
+}
+
+.depimg {
+  border: 1px solid rgba(123, 140, 152, 0.2);
+  width: 70px;
+  height: 45px;
+}
+
+.countries svg {
+  min-width: 18px;
+  margin-top: 3px;
+  margin-right: 3px;
+}
+.restricted .countries-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sub-countries {
+  left: initial;
+  right: 0.9375rem;
+}
+.sub-payments,
+.sub-providers,
+.sub-countries {
+  max-width: 671px;
+}
+.sub-payments .sub-menu-items,
+.sub-providers .sub-menu-items,
+.sub-countries .sub-menu-items {
+  flex-wrap: wrap;
+  min-width: 200px;
+  max-width: 400px;
+  flex-direction: row;
+}
+.sub-countries .sub-menu-items {
+  flex-wrap: wrap;
+  min-width: 200px;
+  max-width: 461px;
+  flex-direction: row;
+}
+.sub-countries {
+  max-width: 732px;
+}
+.sub-payments .sub-menu-items a,
+.sub-providers .sub-menu-items a {
+  flex-basis: 32%;
+}
+.sub-countries .sub-menu-items a {
+  flex-basis: 48%;
+}
+
+.flag-countries {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.brandImage {
+  max-height: 100px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons {
+  flex-direction: column;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 8px 15px 8px;
+  color: #fff;
+  transition: 0.3s;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 1px;
+  text-align: center;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #65676a;
+  color: #65676a;
+  font-size: 13px;
+}
+.btn-secondary:hover {
+  border-color: #128722;
+  color: #128722;
+}
+.btn-more {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (min-width: 320px) and (max-width: 1259px) {
+  .card-brand-banner .review-bonus {
+    min-height: 63px !important;
+  }
+  .card-brand-banner {
+    display: flex !important;
+  }
+}
+
+.review-bonus {
+  color: #fff !important;
+  font-size: 14px;
+  min-height: 69px;
+}
+.review-bonus strong br {
+  display: none;
+}
+
+.isolate-tabs {
+  border-radius: 30px;
+
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  padding: 16px 0;
+  border-top: 2.5px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 2.5px solid rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
+.isolate-tabs button {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 16px 10px;
+  border-right: 1px solid #4f4f4f !important;
+  position: relative;
+  overflow: visible;
+}
+.isolate-tabs button:last-of-type {
+  border-right: none !important;
+}
+.isolate-tabs button svg {
+  margin-right: 3px;
+}
+.isolate-tabs .decoration-2:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ff8f1f;
+  bottom: -16px;
+}
+.card-36 {
+  border-radius: 30px;
+  border-top: 2.5px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 2.5px solid rgba(255, 255, 255, 0.4);
+  background: linear-gradient(
+    161deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 101.7%
+  );
+  backdrop-filter: blur(17.915000915527344px);
+}
+.card-36 .brandImage {
+  background: url(/newimages/banner32.png) no-repeat center;
+  width: 100%;
+  height: 166px;
+  max-height: 166px;
+  background-size: cover;
+  border-radius: 30px;
+}
+.btn-new-mini {
+  background: url(/newimages/btn-new.png) no-repeat center;
+  position: relative;
+  min-width: 326px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.btn-new-mini:after {
+  content: "";
+  background: url(/newimages/btn-new-mini.png) no-repeat center;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 3px;
+  top: 6px;
+  z-index: 0;
+  transition: 0.3s;
+}
+.btn-new-mini:hover:after {
+  opacity: 0;
+}
+.btn-new-mini p {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+}
+
+.big-p {
+  color: #fff;
+  text-align: center;
+  font-family: "AA Duke";
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.mini-p {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.big-p span {
+  color: #ff8f1f;
+  font-size: 38px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .card-brand-filtered {
+    padding: 20px 10px;
+  }
+  .card-brand-filtered .card-36 {
+    margin-left: 0;
+  }
+  .overlay-filter {
+  }
+  .slws {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .slsk {
+    max-width: 100%;
+  }
+  .awesome .slick-list,
+  .awesome .slick-track {
+    max-height: 350px;
+  }
+  .isolate-tabs {
+    padding: 0;
+  }
+}
+
+.payments-tabs,
+.providers-tabs {
+  border-radius: 30px;
+
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  padding: 4px 0;
+  border-top: 2.5px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 2.5px solid rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
+.payments-tabs button,
+.providers-tabs button {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 16px 10px;
+  border-right: 1px solid #4f4f4f !important;
+  position: relative;
+  overflow: visible;
+}
+.payments-tabs button:last-of-type,
+.providers-tabs button:last-of-type {
+  border-right: none !important;
+}
+.payments-tabs button svg,
+.providers-tabs button svg {
+  margin-right: 3px;
+}
+.payments-tabs .decoration-2:after,
+.providers-tabs .decoration-2:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ff8f1f;
+  bottom: -4px;
+}

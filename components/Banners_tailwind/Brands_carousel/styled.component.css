@@ -1,0 +1,34 @@
+.brand_carousel .slick-dots li.slick-active button:before {
+  color: #4f46e5 !important;
+}
+
+.brand_carousel .slick-dots li button:before {
+  font-size: 12px;
+}
+.slick-list {
+  overflow: hidden;
+}
+.btn-play {
+  border-radius: 0px 0px 30px 30px;
+  background: #ff8f1f;
+  box-shadow: 0px -5px 30px 0px rgba(255, 143, 31, 0.3);
+  padding: 12px 0;
+  width: 100%;
+  line-height: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.card-sl {
+  border: 2px rgba(255, 255, 255, 0.3) solid;
+  border-radius: 32px;
+  padding-top: 10px;
+}
+.card-sl > div > .mt-3 {
+  display: flex;
+  padding: 0 10px;
+}

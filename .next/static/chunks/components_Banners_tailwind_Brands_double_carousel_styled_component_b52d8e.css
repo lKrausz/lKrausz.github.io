@@ -1,0 +1,189 @@
+/* [project]/components/Banners_tailwind/Brands_double_carousel/styled.component.css [app-client] (css) */
+.brands_rows .wrap {
+  max-width: 400px;
+}
+
+.brands_rows .items-wrap {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  gap: 20px;
+}
+
+.brands_rows .items-wrap:before, .brands_rows .items-wrap:after {
+  content: "";
+  height: 100%;
+  top: 0;
+  width: 10%;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.brands_rows .items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 20px;
+  counter-reset: item;
+  justify-content: space-around;
+  min-width: 100%;
+}
+
+.brands_rows .item {
+  flex: none;
+  width: 150px;
+  height: 100px;
+  counter-increment: item;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px 0;
+  transition: all .1s ease-in-out;
+}
+
+.brands_rows .item:hover {
+  transform: scale(1.05);
+}
+
+.brands_rows .marquee {
+  animation: 200s linear infinite scroll;
+}
+
+.brands_rows .reverce {
+  animation-direction: reverse;
+}
+
+.brands_rows .items-wrap:hover .marquee {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+.background-slider2.absolute {
+  left: -24px;
+}
+
+.background-slider2:after {
+  display: flex;
+  content: "";
+  width: 561px;
+  height: 499px;
+  background: url("/newimages/bannerSlider.png") 100% 0 no-repeat;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.background .wrap {
+  margin-right: 40px;
+}
+
+.brands_rows h2.mt-4 {
+  font-family: AA Duke;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  padding-left: 48px;
+  color: #fff !important;
+  font-size: 98px !important;
+}
+
+.brands_rows h2.mt-4 span {
+  font-family: AA Duke;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #f9a23d !important;
+  font-size: 80px !important;
+}
+
+.brands_rows h3 {
+  margin-top: 111px;
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 36px;
+  position: relative;
+  z-index: 1;
+  padding-left: 48px;
+}
+
+.brands_rows p {
+  margin-top: 33px;
+  color: #cbcbcb;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding-left: 48px;
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  .brands_rows {
+    padding-top: 0;
+  }
+
+  .brands_rows svg {
+    display: none;
+  }
+
+  .brands_rows h2.mt-4 {
+    padding-left: 0;
+    font-size: 42px !important;
+  }
+
+  .brands_rows h2.mt-4 span {
+    font-size: 36px !important;
+  }
+
+  .brands_rows h3 {
+    margin-top: 0;
+    padding-left: 0;
+    font-size: 20px;
+  }
+
+  .brands_rows p {
+    padding-left: 0;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .background .wrap {
+    margin-right: 0;
+  }
+
+  .background .items .item {
+    width: 80px;
+    height: 40px;
+  }
+
+  .background .items .item img {
+    max-width: 80px;
+    height: 40px;
+  }
+}
+
+/*# sourceMappingURL=components_Banners_tailwind_Brands_double_carousel_styled_component_b52d8e.css.map*/

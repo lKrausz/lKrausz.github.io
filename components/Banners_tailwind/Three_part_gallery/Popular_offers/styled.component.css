@@ -1,0 +1,9 @@
+.popular-offers .slick-slide {
+    margin-right: 0px !important;
+}
+
+@media(min-width: 320px) and (max-width: 767px) {
+    .popular-offers .cards-th {
+        margin-top: 40px;
+    }
+}

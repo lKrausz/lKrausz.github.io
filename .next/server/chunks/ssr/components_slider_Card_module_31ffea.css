@@ -1,0 +1,107 @@
+/* [project]/components/slider/Card.module.css [app-ssr] (css) */
+.Card-module__dr5V-W__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 26rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 2rem 2rem;
+  border-radius: 10px;
+  border: 2px solid #ffffffe6;
+  opacity: 1 !important;
+}
+
+.Card-module__dr5V-W__card img {
+  width: 100%;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 100px;
+  border-radius: 8px;
+  margin-right: auto;
+  max-height: 100px !important;
+  padding-top: 15px !important;
+}
+
+.Card-module__dr5V-W__card h2 {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.Card-module__dr5V-W__card p {
+  margin: 0;
+  margin-top: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+.Card-module__dr5V-W__card .Card-module__dr5V-W__btnn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div div div:nth-child(6n+1) .Card-module__dr5V-W__card {
+  background: url("/bl_02.png");
+  background-color: bottom right;
+  background-size: cover;
+}
+
+div div div:nth-child(6n+2) .Card-module__dr5V-W__card {
+  background: url("/ylw_01.jpg");
+  background-color: bottom right;
+  background-size: cover;
+}
+
+div div div:nth-child(6n+3) .Card-module__dr5V-W__card {
+  background: url("/bl_02.png");
+  background-color: bottom right;
+  background-size: cover;
+}
+
+div div div:nth-child(6n+4) .Card-module__dr5V-W__card {
+  background: url("/gr_02.png");
+  background-color: bottom right;
+  background-size: cover;
+}
+
+div div div:nth-child(6n+5) .Card-module__dr5V-W__card {
+  background: url("/ylw_01.jpg");
+  background-color: bottom right;
+  background-size: cover;
+}
+
+div div div:nth-child(6n+6) .Card-module__dr5V-W__card {
+  background: url("/gr_02.png");
+  background-color: bottom right;
+  background-size: cover;
+}
+
+@media (width >= 320px) and (width <= 1259px) {
+  .Card-module__dr5V-W__card {
+    width: 18rem;
+    padding: 15px;
+  }
+
+  .Card-module__dr5V-W__card img {
+    width: 100%;
+    min-width: 150px;
+    max-width: 150px;
+    max-height: 75px;
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+
+  div div div:nth-child(6n+1) .Card-module__dr5V-W__card {
+    background: url("/green_mobile.png");
+  }
+
+  div div div:nth-child(6n+2) .Card-module__dr5V-W__card {
+    background: url("/yellow_mobile.png");
+  }
+
+  div div div:nth-child(6n+3) .Card-module__dr5V-W__card {
+    background: url("/blue_mobile.png");
+  }
+}
+
+/*# sourceMappingURL=components_slider_Card_module_31ffea.css.map*/

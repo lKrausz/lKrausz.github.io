@@ -1,0 +1,325 @@
+/* [project]/components/Banners_tailwind/TopBrands/styled.component.css [app-ssr] (css) */
+.slider-left .bordered-button {
+  border: 2px solid #fff;
+  max-width: 250px;
+}
+
+.banner-right .bordered-button {
+  border: 2px solid #fff;
+  max-width: 200px;
+}
+
+.slider-left .slick-slide {
+  margin: 0 !important;
+}
+
+.slider-left .slick-dots li.slick-active button:before {
+  color: #4f46e5 !important;
+}
+
+.slider-left .slick-dots li button:before {
+  font-size: 12px;
+}
+
+.slider-left .background {
+  min-height: 300px !important;
+  max-height: 300px !important;
+}
+
+.banner-right {
+  min-height: 300px !important;
+  max-height: 300px !important;
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  .topbr-tw {
+    overflow: hidden;
+  }
+
+  main > .topbr-tw {
+    background-position: 0 10% !important;
+    background-size: cover !important;
+  }
+}
+
+@media (width >= 320px) and (width <= 639px) {
+  .slider-left .background {
+    min-height: 180px !important;
+  }
+}
+
+@media (width >= 768px) and (width <= 1260px) {
+  main > .topbr-tw {
+    max-height: 620px;
+    height: 620px;
+    background-position: 0 10% !important;
+    background-size: cover !important;
+  }
+}
+
+.topbr-tw {
+  padding-top: 66px;
+}
+
+.topbr-tw p {
+  margin-bottom: 0 !important;
+}
+
+.slider-left {
+  max-width: 694px;
+}
+
+.slider-left .slick-slide {
+  padding: 0;
+}
+
+.background-slider {
+  height: 411px;
+  max-width: 694px;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 33px 29px 54px;
+}
+
+.slick-slide:nth-child(3n+1) .background-slider {
+  background: url("/newimages/new-banner-slider-1.png") center no-repeat;
+}
+
+.slick-slide:nth-child(3n+2) .background-slider {
+  background: url("/newimages/new-banner-slider-2.png") center no-repeat;
+}
+
+.slick-slide:nth-child(3n+3) .background-slider {
+  background: url("/newimages/new-banner-slider-3.png") center no-repeat;
+}
+
+.background-slider h3 {
+  color: #fff;
+  font-family: AA Duke;
+  font-size: 94px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.background-slider p, .jins p {
+  color: #fff;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px;
+}
+
+.topbr-tw .slider-left .slick-dots {
+  position: absolute;
+  z-index: 1;
+  bottom: 45px;
+  left: 30%;
+  display: flex !important;
+}
+
+.topbr-tw .slider-left .slick-dots li {
+  border-radius: 50%;
+  position: relative;
+  margin: 0 3px;
+  padding: 0 !important;
+  width: 8px !important;
+  height: 8px !important;
+  background: #ff8f1f !important;
+  opacity: .3 !important;
+}
+
+.topbr-tw .slider-left .slick-dots li button {
+  opacity: 0;
+}
+
+.topbr-tw .slider-left .slick-dots li.slick-active {
+  content: "";
+  background: #ff8f1f !important;
+  opacity: 1 !important;
+}
+
+.jins p, .jins h5 {
+  position: relative;
+  z-index: 1;
+}
+
+.jins > div {
+  max-width: 483px;
+  height: 412px;
+  padding: 36px 29px;
+  position: relative;
+  border-radius: 30px;
+  border-top: 2px solid #fff6;
+  border-bottom: 2px solid #fff6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.jins > div:after {
+  content: "";
+  position: absolute;
+  width: 534px;
+  height: 458px;
+  background: url("/newimages/backendbanner.png") center no-repeat;
+  background-size: cover;
+  left: -25px;
+  top: -30px;
+  z-index: -1;
+}
+
+.frstjin {
+  background: url("/newimages/frstjin.png") center no-repeat;
+}
+
+.scnjin {
+  background: url("/newimages/banr3.png") center no-repeat;
+}
+
+.thrdjin {
+  background: url("/newimages/thrdjin.png") center no-repeat;
+}
+
+.jins > div .btn {
+  margin-left: 25%;
+  margin-top: 50px;
+  margin-right: 4%;
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  .jins > div .btn {
+    margin-left: 35%;
+    margin-top: 20px;
+    margin-right: 4%;
+  }
+
+  .h5 {
+    margin-bottom: 15px;
+    font-size: 42px !important;
+  }
+
+  .jins > div .btn {
+    margin-top: 0;
+    margin-left: 15% !important;
+  }
+}
+
+.h5 {
+  color: #fff;
+  font-family: AA Duke;
+  font-size: 54px;
+  text-align: center;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.jins > div p, .jins > div h5, .jins > div .btn {
+  position: relative;
+  z-index: 4;
+}
+
+.wrap-button {
+  position: relative;
+  z-index: 4;
+  border-radius: 15px;
+  border-top: 2px solid #fff6 solid;
+  border-bottom: 2px solid #fff6 solid;
+  background: linear-gradient(161deg, #ffffff1a 0%, #ffffff0d 101.7%);
+  -webkit-backdrop-filter: blur(12.5px);
+  backdrop-filter: blur(12.5px);
+  margin-top: auto;
+  padding: 0;
+}
+
+.p {
+  font-weight: 500;
+  color: #ff8f1f;
+}
+
+.img-wrap {
+  background: linear-gradient(161deg, #ffffff1a 0%, #ffffff0d 101.7%);
+  -webkit-backdrop-filter: blur(12.5px);
+  backdrop-filter: blur(12.5px);
+  padding: 15px;
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  .wrap-line-text {
+    z-index: 99;
+  }
+
+  .main__container {
+    width: 95%;
+  }
+
+  header .main__container {
+    padding-top: 50px !important;
+  }
+
+  main > .topbr-tw {
+    padding-top: 20px;
+  }
+
+  .background-slider {
+    padding: 20px 10px 80px;
+    height: initial;
+  }
+
+  .background-slider h3 {
+    font-size: 48px;
+  }
+
+  .background-slider p, .jins p {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+  .mob1 {
+    flex-direction: column;
+  }
+
+  .footer-bg:after {
+    display: none;
+  }
+
+  .jins > div {
+    height: initial;
+    padding: 20px 10px;
+    width: 100%;
+  }
+
+  .jins > div:after {
+    display: none;
+  }
+
+  .slick-list {
+    margin-right: 0;
+  }
+
+  .jins > div img {
+    border-radius: 30px;
+  }
+
+  .footer-bg:after {
+    display: none;
+  }
+
+  .slick-slide:nth-child(3n+1) .background-slider {
+    background: url("/newimages/new-banner-slider-1_small.png") center no-repeat;
+    background-size: cover;
+  }
+
+  .slick-slide:nth-child(3n+2) .background-slider {
+    background: url("/newimages/new-banner-slider-2_small.png") center no-repeat;
+    background-size: cover;
+  }
+
+  .slick-slide:nth-child(3n+3) .background-slider {
+    background: url("/newimages/new-banner-slider-3_small.png") center no-repeat;
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=components_Banners_tailwind_TopBrands_styled_component_31ffea.css.map*/

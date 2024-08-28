@@ -1,0 +1,66 @@
+/* [project]/components/Banners_tailwind/Double_banners/styled.component.css [app-ssr] (css) */
+.double_banners .bordered-button {
+  border: 2px solid #fff;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.banner-big {
+  max-width: 581px;
+  border-radius: 30px;
+  border-top: 2.5px solid #fff6;
+  border-bottom: 2.5px solid #fff6;
+  background: linear-gradient(161deg, #ffffff1a 0%, #ffffff0d 101.7%);
+  -webkit-backdrop-filter: blur(17.915px);
+  backdrop-filter: blur(17.915px);
+}
+
+.banner-big .absolute {
+  display: flex;
+  bottom: 133px;
+}
+
+.banner-big {
+  position: relative;
+}
+
+.banner-big p.mt-10 {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 0 22px 39px;
+}
+
+.double_banners .buttons {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #ffffff4d;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.double_banners button {
+  padding: 15px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.double_banners .not-active {
+  background: none;
+}
+
+.double_banners .active {
+  background: #ff8f1f;
+}
+
+/*# sourceMappingURL=components_Banners_tailwind_Double_banners_styled_component_31ffea.css.map*/

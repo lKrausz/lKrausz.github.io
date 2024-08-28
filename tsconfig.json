@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/bonuses/page.jsx",
+    "components/PreviewHome.tsx",
+    "app/page.jsx",
+    "components/TheHeader.jsx",
+    "app/layout.tsx",
+    "components/BrandSearchContainer.jsx",
+    "app/search/page.jsx"
+, "components/posts/PostContent.jsx", "components/switcher/LanguageSwitcher.jsx", "app/api/brands/route.ts", "components/header/MenuPages/index.js"  ],
+  "exclude": ["node_modules"]
+}

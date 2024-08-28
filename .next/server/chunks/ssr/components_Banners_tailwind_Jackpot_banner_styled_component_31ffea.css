@@ -1,0 +1,62 @@
+/* [project]/components/Banners_tailwind/Jackpot_banner/styled.component.css [app-ssr] (css) */
+.banner-jack {
+  background: url("/newimages/bannerNight.png") center no-repeat;
+  border-radius: 30px;
+  box-shadow: 0 4px 35px #fff3;
+  min-height: 189px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner-jack h3, .banner-jack p {
+  color: #fff;
+  font-family: AA Duke;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.banner-jack h3 {
+  font-size: 60px;
+}
+
+.banner-jack h3 span {
+  font-size: 50px;
+  color: #ff8f1f;
+}
+
+.banner-jack p {
+  font-size: 70px;
+  margin-top: 0 !important;
+}
+
+.banner-jack:after {
+  content: "";
+  position: absolute;
+  width: 1302px;
+  height: 177px;
+  left: -56px;
+  top: 6px;
+  background: url("/newimages/banner-jack.png") center no-repeat;
+  z-index: -1;
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  .banner-jack:after {
+    display: none;
+  }
+
+  .mb00 {
+    margin-bottom: 0;
+  }
+
+  .banner-jack {
+    background: url("/newimages/bannerNight_small.png") center no-repeat;
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=components_Banners_tailwind_Jackpot_banner_styled_component_31ffea.css.map*/

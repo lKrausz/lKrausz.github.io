@@ -1,0 +1,101 @@
+.bg-random {
+  border-radius: 30px;
+  border-top: 2.5px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 2.5px solid rgba(255, 255, 255, 0.4);
+  background: linear-gradient(
+    161deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 101.7%
+  );
+  backdrop-filter: blur(17.915000915527344px);
+  position: relative;
+}
+
+.abs-banner {
+  position: relative;
+}
+.abs-banner:after {
+  content: "";
+  width: 524px;
+  height: 328px;
+  background: url(/newimages/bannerRandom3.png) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: -66px;
+}
+.abs-banner:before {
+  content: "";
+  position: absolute;
+  background: url(/newimages/bannerRandom4.png) no-repeat center;
+  width: 457px;
+  height: 423px;
+  top: 50px;
+  left: -28px;
+  z-index: -1;
+}
+.bg-random:after {
+  content: "";
+  position: absolute;
+  width: 496px;
+  height: 388px;
+  background: url(/newimages/bannerRandom2.png) no-repeat center;
+  background-size: cover;
+  bottom: -129px;
+  right: -112px;
+}
+.random-title {
+  color: #fff;
+  font-family: "AA Duke";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* text-shadow: -2px -2px 0px #35d2e7, -4px -2px 0px rgba(250, 112, 136, 0.9); */
+}
+.random-title span {
+  color: #ff8f1f;
+}
+.bg-random p.text-white {
+  color: #cbcbcb;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .abs-banner {
+    display: none;
+  }
+  .bg-random::after {
+    width: 147px;
+    height: 104px;
+    bottom: 0;
+    right: 0;
+  }
+  .bg-random .btn-new {
+    margin-bottom: 70px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .mlml {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .ptpt {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .main__container.\!mt16 {
+    margin-top: 0 !important;
+  }
+  .mmt-mob {
+    margin-top: 40px !important;
+  }
+
+  .bg-random {
+    background: url(/newimages/banner-random_small_opacity.png) no-repeat center;
+    background-size: cover;
+  }
+}

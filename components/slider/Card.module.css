@@ -1,0 +1,127 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  /* background-color: bisque; */
+  width: 26rem;
+  height: fit-content;
+  padding: 0 2rem 2rem 2rem;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  opacity: 1 !important;
+}
+
+.card img {
+  /* margin-top: -20%; */
+  width: 100%;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 100px;
+  max-height: 100px !important;
+  border-radius: 8px;
+  margin-right: auto;
+  padding-top: 15px !important;
+}
+
+.card h2 {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.card p {
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card .btnn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* div div div:nth-child(6n + 1) .card {
+  background: url(/green_2.png);
+  background-size: cover;
+}
+div div div:nth-child(6n + 2) .card  {
+  background: url(/lightblue.png);
+  background-size: cover;
+}
+div div div:nth-child(6n + 3) .card  {
+  background: url(/blue.png);
+  background-size: cover;
+}
+div div div:nth-child(6n + 4) .card  {
+  background: url(/green_1.png);
+  background-size: cover;
+}
+div div div:nth-child(6n + 5) .card  {
+  background: url(/orange.png);
+  background-size: cover;
+}
+div div div:nth-child(6n + 6) .card  {
+  background: url(/yellow.jpg);
+  background-size: cover;
+} */
+
+div div div:nth-child(6n + 1) .card {
+  background: url(/bl_02.png);
+  background-color: bottom right;
+  background-size: cover;
+
+}
+div div div:nth-child(6n + 2) .card  {
+  background: url(/ylw_01.jpg);
+  background-color: bottom right;
+  background-size: cover;
+}
+div div div:nth-child(6n + 3) .card  {
+  background: url(/bl_02.png);
+  background-color: bottom right;
+  background-size: cover;
+}
+div div div:nth-child(6n + 4) .card  {
+  background: url(/gr_02.png);
+  background-color: bottom right;
+  background-size: cover;
+}
+div div div:nth-child(6n + 5) .card  {
+  background: url(/ylw_01.jpg);
+  background-color: bottom right;
+  background-size: cover;
+
+}
+div div div:nth-child(6n + 6) .card  {
+  background: url(/gr_02.png);
+  background-color: bottom right;
+  background-size: cover;
+}
+
+@media (min-width: 320px) and (max-width: 1259px) {
+  .card {
+    width: 18rem;
+    padding: 15px;
+  }
+  .card img {
+    /* margin-top: -20%; */
+    width: 100%;
+    min-width: 150px;
+    max-width: 150px;
+    max-height: 75px;
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+
+  div div div:nth-child(6n + 1) .card {
+    background: url(/green_mobile.png);
+  }
+  div div div:nth-child(6n + 2) .card  {
+    background: url(/yellow_mobile.png);
+  }
+  div div div:nth-child(6n + 3) .card  {
+    background: url(/blue_mobile.png);
+  }
+
+}

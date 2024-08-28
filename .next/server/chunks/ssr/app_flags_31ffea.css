@@ -1,0 +1,119 @@
+/* [project]/app/flags.css [app-ssr] (css) */
+.flag-icon {
+  width: 20px;
+  height: 20px;
+  float: left;
+  content: "";
+  padding: auto;
+  background: url("/countries-list-new.png") no-repeat !important;
+}
+
+.flag-icon-au {
+  background-position: 0 0 !important;
+}
+
+.flag-icon-at {
+  background-position: -20px 0 !important;
+}
+
+.flag-icon-be {
+  background-position: -40px 0 !important;
+}
+
+.flag-icon-bg {
+  background-position: -60px 0 !important;
+}
+
+.flag-icon-ca {
+  background-position: -80px 0 !important;
+}
+
+.flag-icon-cz {
+  background-position: -100px 0 !important;
+}
+
+.flag-icon-dk {
+  background-position: -120px 0 !important;
+}
+
+.flag-icon-fi {
+  background-position: -140px 0 !important;
+}
+
+.flag-icon-fr {
+  background-position: 0 -20px !important;
+}
+
+.flag-icon-de {
+  background-position: -20px -20px !important;
+}
+
+.flag-icon-gr {
+  background-position: -40px -20px !important;
+}
+
+.flag-icon-hu {
+  background-position: -80px -20px !important;
+}
+
+.flag-icon-ie {
+  background-position: -100px -20px !important;
+}
+
+.flag-icon-it {
+  background-position: -120px -20px !important;
+}
+
+.flag-icon-nl {
+  background-position: -140px -20px !important;
+}
+
+.flag-icon-nz {
+  background-position: 0 -40px !important;
+}
+
+.flag-icon-no {
+  background-position: -20px -40px !important;
+}
+
+.flag-icon-pl {
+  background-position: -40px -40px !important;
+}
+
+.flag-icon-pt {
+  background-position: -60px -40px !important;
+}
+
+.flag-icon-sk {
+  background-position: -80px -40px !important;
+}
+
+.flag-icon-es {
+  background-position: -100px -40px !important;
+}
+
+.flag-icon-se {
+  background-position: -120px -40px !important;
+}
+
+.flag-icon-ch {
+  background-position: -140px -40px !important;
+}
+
+.flag-icon-tr {
+  background-position: 0 -60px !important;
+}
+
+.flag-icon-gb {
+  background-position: -60px 0 !important;
+}
+
+.flag-icon-us {
+  background-position: -60px -20px !important;
+}
+
+.flag-icon-all {
+  background-position: -60px -20px !important;
+}
+
+/*# sourceMappingURL=app_flags_31ffea.css.map*/

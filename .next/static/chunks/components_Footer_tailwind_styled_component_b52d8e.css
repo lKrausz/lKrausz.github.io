@@ -1,0 +1,128 @@
+/* [project]/components/Footer_tailwind/styled.component.css [app-client] (css) */
+.footer-bg {
+  border-radius: 30px 0 0;
+  background: linear-gradient(23deg, #9d4eb3 -6.66%, #6c37b1 20.54%, #310877 83.87%);
+  box-shadow: 0 4px 30px #d180ee33;
+  position: relative;
+}
+
+.footer-bg:after {
+  content: "";
+  background: url("/newimages/footer.png") center no-repeat;
+  width: 662px;
+  height: 339px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+.footer-h3 {
+  color: var(--gray-200, #e5e7eb);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: .9px;
+  text-transform: uppercase;
+}
+
+.footer-h4 {
+  color: var(--indigo-100, #e0e7ff);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+}
+
+.footer-p {
+  color: var(--gray-50, #f9fafb);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.footer-bg a.leading {
+  color: var(--gray-300, #d1d5db);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-bg ul {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-bg ul li {
+  margin-bottom: 16px;
+  margin-top: 0 !important;
+}
+
+.footer-bg > div, .footer-bg > div > div {
+  padding-bottom: 0;
+}
+
+.bot-foot {
+  color: var(--gray-300, #d1d5db);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border-top: 1px solid #fff3;
+  margin-top: 0 !important;
+  padding: 22px 0 !important;
+}
+
+.bot-foot p {
+  margin-bottom: 0;
+}
+
+.mb42 {
+  padding-bottom: 42px !important;
+}
+
+.btn-orange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: #ff8f1f;
+  margin-top: 16px;
+  transition: all .3s;
+  width: 198px !important;
+  height: 53px !important;
+  padding: 9px 17px !important;
+}
+
+.btn-orange:hover {
+  background: #ff8f1fc9;
+}
+
+.form-subscribe input {
+  border-radius: 4px;
+  border-top: 1.5px solid #fff6;
+  border-bottom: 1.5px solid #fff6;
+  background: linear-gradient(161deg, #ffffff1a 0%, #ffffff0d 101.7%);
+  -webkit-backdrop-filter: blur(17.915px);
+  backdrop-filter: blur(17.915px);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: 55px;
+  color: #fff;
+}
+
+.form-subscribe input::-moz-placeholder {
+  color: #fff;
+}
+
+.form-subscribe input::placeholder {
+  color: #fff;
+}
+
+/*# sourceMappingURL=components_Footer_tailwind_styled_component_b52d8e.css.map*/

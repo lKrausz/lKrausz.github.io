@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 9, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/public/logo3.png.mjs (structured image object)"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 431, height: 103, blurDataURL: \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAATUlEQVR42gFCAL3/AEFBQThCQkI5R0M+QH9gQHyDY0OAimpKiIprTYYuJBorAENDQzlBQUE4TEZARYVkQoKNa0mJjGpIiYlpSYUqIRcop70VCKp5GEgAAAAASUVORK5CYII=\", blurWidth: 8, blurHeight: 2 }\n"],"names":[],"mappings":";;;;;;uCACe;IAAE,KAAA,+GAAA,CAAA,UAAG;IAAE,OAAO;IAAK,QAAQ;IAAK,aAAa;IAA8M,WAAW;IAAG,YAAY;AAAE"}},
+    {"offset": {"line": 23, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 32, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/public/whl2.png.mjs (structured image object)"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 396, height: 209, blurDataURL: \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAj0lEQVR42gGEAHv/ABsAOv87A13/bhqI/3w0jP99No7/cByK/zwDX/8cADr/ADoCXf9tJYT/Yjxu/1NWVv9PVVP/Zjh0/24jif87A17/AGgThf9TRHn/ZmKa/3NKef92RHr/i0Sj/09OY/9rFYb/AHMmiv9NU3r/ZUuX/1lYX/9dWmH/XlOC/1NZdv93Jo7/1NJAYYeoQdYAAAAASUVORK5CYII=\", blurWidth: 8, blurHeight: 4 }\n"],"names":[],"mappings":";;;;;;uCACe;IAAE,KAAA,8GAAA,CAAA,UAAG;IAAE,OAAO;IAAK,QAAQ;IAAK,aAAa;IAAsS,WAAW;IAAG,YAAY;AAAE"}},
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

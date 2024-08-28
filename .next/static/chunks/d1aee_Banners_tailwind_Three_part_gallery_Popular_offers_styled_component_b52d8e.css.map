@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["[project]/components/Banners_tailwind/Three_part_gallery/Popular_offers/styled.component.css"],"sourcesContent":[".popular-offers .slick-slide {\r\n    margin-right: 0px !important;\r\n}\r\n\r\n@media(min-width: 320px) and (max-width: 767px) {\r\n    .popular-offers .cards-th {\r\n        margin-top: 40px;\r\n    }\r\n}"],"names":[],"mappings":"AAAA;;;;AAIA;EACI"}},
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

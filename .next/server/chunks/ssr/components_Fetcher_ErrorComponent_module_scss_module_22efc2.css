@@ -1,0 +1,28 @@
+/* [project]/components/Fetcher/ErrorComponent.module.scss.module.css [app-ssr] (css) */
+.ErrorComponent-module-scss-module__bJe2vW__container {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ErrorComponent-module-scss-module__bJe2vW__container .ErrorComponent-module-scss-module__bJe2vW__title {
+  margin: 0;
+  color: var(--base-black);
+}
+
+.ErrorComponent-module-scss-module__bJe2vW__container .ErrorComponent-module-scss-module__bJe2vW__subtitle {
+  margin: 0;
+  color: var(--base-med-grey-1);
+}
+
+.ErrorComponent-module-scss-module__bJe2vW__container .ErrorComponent-module-scss-module__bJe2vW__button {
+  width: 150px;
+}
+
+
+/*# sourceMappingURL=components_Fetcher_ErrorComponent_module_scss_module_22efc2.css.map*/

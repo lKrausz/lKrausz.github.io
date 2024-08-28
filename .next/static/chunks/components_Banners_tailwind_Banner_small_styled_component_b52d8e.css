@@ -1,0 +1,118 @@
+/* [project]/components/Banners_tailwind/Banner_small/styled.component.css [app-client] (css) */
+.new-brands {
+  border-radius: 30px;
+  border-top: 2.5px solid #ffffff4d;
+  border-bottom: 2.5px solid #ffffff4d;
+  background: linear-gradient(161deg, #ffffff1a 0%, #ffffff0d 101.7%);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  padding: 28px;
+  position: relative;
+}
+
+.new-brands p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.new-brands p span {
+  color: #ff8f1f;
+}
+
+.minibanner {
+  left: -92px;
+  top: -97px;
+}
+
+.btn-secondary2 {
+  border: 1px solid #ff8f1f;
+  background: #ad1aaf0d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: .54px;
+  text-transform: capitalize;
+  padding: 24px 58px;
+  max-width: 220px;
+  min-height: 70px;
+  width: 100%;
+}
+
+.btn-secondary2:hover {
+  color: #fff;
+  background: #ff8f1f;
+  border: 1px solid #ff8f1f;
+}
+
+.show-more {
+  position: relative;
+  max-width: 220px;
+  width: 100%;
+  transform: scale(.7);
+}
+
+.show-more:after {
+  content: "";
+  position: absolute;
+  background: #ff8f1f;
+  width: 4px;
+  height: 42px;
+  left: -4px;
+  top: 15px;
+}
+
+.show-more:before {
+  content: "";
+  position: absolute;
+  background: #ff8f1f;
+  width: 4px;
+  height: 42px;
+  right: -4px;
+  top: 15px;
+}
+
+.abs-p {
+  left: -20px;
+  min-height: 70px;
+  min-width: 170px;
+}
+
+.abs-p p {
+  color: #fff;
+  font-family: AA Duke;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 1;
+  font-size: 64px !important;
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  .new-brands {
+    padding: 20px 10px;
+  }
+
+  .new-brands .show-more {
+    margin-right: auto;
+    margin-top: 30px;
+  }
+
+  .new-brands .abs-p {
+    position: initial;
+  }
+
+  .new-brands img {
+    position: initial;
+    display: none;
+  }
+
+  .new-brands > .items-center {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=components_Banners_tailwind_Banner_small_styled_component_b52d8e.css.map*/

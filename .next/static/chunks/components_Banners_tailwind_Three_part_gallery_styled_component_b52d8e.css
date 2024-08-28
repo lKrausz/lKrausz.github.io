@@ -1,0 +1,326 @@
+/* [project]/components/Banners_tailwind/Three_part_gallery/styled.component.css [app-client] (css) */
+.fivehot {
+  border-radius: 30px;
+  border-top: 2.5px solid #fff6;
+  border-bottom: 2.5px solid #fff6;
+  background: linear-gradient(161deg, #ffffff1a 0%, #ffffff0d 101.7%);
+  -webkit-backdrop-filter: blur(17.915px);
+  backdrop-filter: blur(17.915px);
+}
+
+.fivehot-banner {
+  padding: 28px 19px;
+  background: url("/newimages/fivehot.png") center no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  min-height: 329px;
+  margin-bottom: 0;
+}
+
+.fivehot-banner h3 {
+  color: #fff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+.fivehot-banner h3 .span-orange {
+  color: #ff8f1f;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+.fivehot-banner h3 span {
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.fivehot-banner p {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.fivehot .ul-list {
+  padding: 28px 0;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.fivehot .ul-list .li-img {
+  fill: linear-gradient(161deg, #ffffff1a 0%, #ffffff0d 101.7%);
+  stroke-width: 2px;
+  stroke: #9d4eb3;
+  filter: drop-shadow(0 0 17.4px #9d4eb380);
+  -webkit-backdrop-filter: blur(17.915px);
+  backdrop-filter: blur(17.915px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 70px;
+  max-width: 70px;
+  min-height: 70px;
+  max-height: 70px;
+  border-radius: 50%;
+  border: 2px solid #ffffff27;
+}
+
+.ul-list a {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.ul-list p {
+  color: #bebebe;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.ul-list li {
+  border-bottom: 1px solid #573e7d;
+  padding-bottom: 16px;
+  display: flex;
+}
+
+.right-c {
+  margin-left: 25px;
+}
+
+.emojis {
+  background: url("/newimages/threeface.png") center no-repeat;
+  min-height: 329px;
+  border-radius: 30px;
+  padding: 38px 0 12px 44px;
+  background-size: cover;
+}
+
+.emojis h3 {
+  color: #fff;
+  font-family: AA Duke;
+  font-size: 83px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  max-width: 286px;
+  line-height: 80px;
+}
+
+.emojis h3 span {
+  color: #ff8f1f;
+  font-size: 65px;
+}
+
+.btn-choose {
+  width: 91px;
+  height: 51px;
+  position: relative;
+  margin-right: 42px;
+}
+
+.btn-choose:after {
+  content: "";
+  background: url("/newimages/btn-ch.png") center no-repeat;
+  position: absolute;
+  width: 119px;
+  height: 85px;
+  top: -20px;
+  left: -15px;
+  z-index: 0;
+}
+
+.btn-choose a {
+  background: url("/newimages/btn-choose.png") center no-repeat;
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-weight: 700;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  transition: all .3s;
+}
+
+.btn-choose a:hover {
+  opacity: 0;
+}
+
+.btns-ch {
+  margin-top: auto;
+  margin-right: 13px;
+  margin-top: 198px;
+}
+
+.btns-ch .btn-choose {
+  margin-top: 20px;
+}
+
+.card-thr {
+  display: flex;
+  min-width: 255px;
+  max-width: 255px;
+  height: 260px;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  align-self: stretch;
+  border-radius: 30px;
+  border-top: 2.5px solid #fff6;
+  border-bottom: 2.5px solid #fff6;
+  background: linear-gradient(161deg, #ffffff1a 0%, #ffffff0d 101.7%);
+  margin-bottom: 29px;
+  box-shadow: 0 1px 3px #0000001a, 0 1px 2px #0000000f;
+}
+
+.cards-thr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-thr > .relative {
+  padding: 14px 32px 0;
+}
+
+.card-thr h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.card-thr p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.card-thr .btn-crd {
+  margin-top: auto;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 0 0 30px 30px;
+  background: #ff8f1f;
+  box-shadow: 0 -5px 30px #ff8f1f4d;
+}
+
+.mob-none {
+  display: none;
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  .fivehot .main__container {
+    width: 100% !important;
+  }
+
+  .fivehot-banner {
+    min-height: initial;
+  }
+
+  .fivehot-banner p {
+    background: linear-gradient(161deg, #ffffff1a 0%, #ffffff0d 101.7%);
+    -webkit-backdrop-filter: blur(12.5px);
+    backdrop-filter: blur(12.5px);
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .right-c {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .emojis {
+    background: linear-gradient(76deg, #9d4eb3 7%, #6c37b1 35.92%, #310877 85.69%);
+    padding: 30px 15px;
+    min-height: initial;
+  }
+
+  .face-mob {
+    flex-direction: column;
+  }
+
+  .emojis h3 {
+    max-width: initial;
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .emojis h3 span {
+    font-size: 38px;
+  }
+
+  .btns-ch {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .btns-ch .btn-choose {
+    margin-right: auto;
+  }
+
+  .btns-ch .btn-choose:last-of-type {
+    margin-right: 0;
+  }
+
+  .mob-none {
+    display: block;
+  }
+
+  .mob-sl .card-thr {
+    min-width: initial;
+    height: initial;
+  }
+
+  .pm10 {
+    padding: 10px 10px 0;
+  }
+
+  .mob-sl .card-thr h3 {
+    display: none;
+  }
+
+  .mob-sl .card-thr p {
+    max-height: 60px;
+    overflow: hidden;
+  }
+
+  .mob-sl .card-thr .btn-crd {
+    padding: 10px;
+  }
+
+  .cards-th .slick-track {
+    height: 250px;
+  }
+
+  .imgp {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/*# sourceMappingURL=components_Banners_tailwind_Three_part_gallery_styled_component_b52d8e.css.map*/

@@ -1,0 +1,11 @@
+.brand_carousel_mobile .slick-dots li.slick-active button:before {
+    color: #4f46e5 !important;
+  }
+  
+  .brand_carousel_mobile .slick-dots li button:before {
+    font-size: 12px;
+
+  }
+  .brand_carousel_mobile .slick-slide {
+    margin: 0 !important;
+  }

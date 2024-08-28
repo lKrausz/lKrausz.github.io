@@ -1,0 +1,74 @@
+/* [project]/components/Banners_tailwind/Fortune_wheel_banner/styled.component.css [app-ssr] (css) */
+.background-roulete {
+  background: url("/newimages/banner-roulete.png") center no-repeat;
+  border-radius: 30px;
+  padding: 43px 0;
+}
+
+.bg-main {
+  border-radius: 30px;
+  border-top: 2.5px solid #fff6;
+  border-bottom: 2.5px solid #fff6;
+  background: linear-gradient(161deg, #ffffff1a 0%, #ffffff0d 101.7%);
+  -webkit-backdrop-filter: blur(17.915px);
+  backdrop-filter: blur(17.915px);
+}
+
+.bg-main .p {
+  color: #9ca3af;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.bg-main h2 {
+  color: #fff;
+  font-family: AA Duke;
+  font-size: 74px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bg-main h2 span {
+  font-size: 60px;
+  color: #ff8f1f;
+}
+
+.bg-main h5 {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.bg-main h5 span {
+  color: #ff8f1f;
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  .bg-main h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .bg-main .p {
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+  }
+
+  .mtt {
+    margin-top: 0;
+  }
+
+  .background-roulete {
+    background: url("/newimages/banner-roulete_small.png") center no-repeat;
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=components_Banners_tailwind_Fortune_wheel_banner_styled_component_31ffea.css.map*/

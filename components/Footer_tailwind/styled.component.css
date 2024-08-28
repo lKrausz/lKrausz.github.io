@@ -1,0 +1,115 @@
+.footer-bg {
+  border-radius: 30px 0px 0px 0px;
+  background: linear-gradient(
+    23deg,
+    #9d4eb3 -6.66%,
+    #6c37b1 20.54%,
+    #310877 83.87%
+  );
+  box-shadow: 0px 4px 30px 0px rgba(209, 128, 238, 0.2);
+  position: relative;
+}
+.footer-bg:after {
+  content: "";
+  background: url(/newimages/footer.png) no-repeat center;
+  width: 662px;
+  height: 339px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+.footer-h3 {
+  color: var(--gray-200, #e5e7eb);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+.footer-h4 {
+  color: var(--indigo-100, #e0e7ff);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+.footer-p {
+  color: var(--gray-50, #f9fafb);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+.footer-bg a.leading {
+  color: var(--gray-300, #d1d5db);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer-bg ul {
+  position: relative;
+  z-index: 2;
+}
+.footer-bg ul li {
+  margin-top: 0 !important;
+  margin-bottom: 16px;
+}
+.footer-bg > div,
+.footer-bg > div > div {
+  padding-bottom: 0;
+}
+.bot-foot {
+  margin-top: 0 !important;
+  padding: 22px 0 !important;
+  color: var(--gray-300, #d1d5db);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.bot-foot p {
+  margin-bottom: 0;
+}
+.mb42 {
+  padding-bottom: 42px !important;
+}
+.btn-orange {
+  display: flex;
+  width: 198px !important;
+  height: 53px !important;
+  padding: 9px 17px !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: #ff8f1f;
+  margin-top: 16px;
+  transition: 0.3s;
+}
+.btn-orange:hover {
+  background: rgba(255, 143, 31, 0.788);
+}
+.form-subscribe input {
+  border-radius: 4px;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.40);
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.40);
+  background: linear-gradient(161deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.05) 101.7%);
+  backdrop-filter: blur(17.915000915527344px);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: 55px;
+  color: #fff;
+
+}
+
+.form-subscribe input::placeholder {
+  color: #fff;
+
+}

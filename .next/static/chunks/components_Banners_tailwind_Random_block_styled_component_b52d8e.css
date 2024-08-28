@@ -1,0 +1,112 @@
+/* [project]/components/Banners_tailwind/Random_block/styled.component.css [app-client] (css) */
+.bg-random {
+  border-radius: 30px;
+  border-top: 2.5px solid #fff6;
+  border-bottom: 2.5px solid #fff6;
+  background: linear-gradient(161deg, #ffffff1a 0%, #ffffff0d 101.7%);
+  -webkit-backdrop-filter: blur(17.915px);
+  backdrop-filter: blur(17.915px);
+  position: relative;
+}
+
+.abs-banner {
+  position: relative;
+}
+
+.abs-banner:after {
+  content: "";
+  width: 524px;
+  height: 328px;
+  background: url("/newimages/bannerRandom3.png") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: -66px;
+}
+
+.abs-banner:before {
+  content: "";
+  position: absolute;
+  background: url("/newimages/bannerRandom4.png") center no-repeat;
+  width: 457px;
+  height: 423px;
+  top: 50px;
+  left: -28px;
+  z-index: -1;
+}
+
+.bg-random:after {
+  content: "";
+  position: absolute;
+  width: 496px;
+  height: 388px;
+  background: url("/newimages/bannerRandom2.png") center no-repeat;
+  background-size: cover;
+  bottom: -129px;
+  right: -112px;
+}
+
+.random-title {
+  color: #fff;
+  font-family: AA Duke;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.random-title span {
+  color: #ff8f1f;
+}
+
+.bg-random p.text-white {
+  color: #cbcbcb;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  .abs-banner {
+    display: none;
+  }
+
+  .bg-random:after {
+    width: 147px;
+    height: 104px;
+    bottom: 0;
+    right: 0;
+  }
+
+  .bg-random .btn-new {
+    margin-bottom: 70px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .mlml {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .ptpt {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .main__container.\!mt16 {
+    margin-top: 0 !important;
+  }
+
+  .mmt-mob {
+    margin-top: 40px !important;
+  }
+
+  .bg-random {
+    background: url("/newimages/banner-random_small_opacity.png") center no-repeat;
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=components_Banners_tailwind_Random_block_styled_component_b52d8e.css.map*/

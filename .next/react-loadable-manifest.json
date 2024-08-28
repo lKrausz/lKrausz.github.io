@@ -1,0 +1,16 @@
+{
+  "components/Brands_home/UserBrands.tsx -> react-slick": {
+    "id": "components/Brands_home/UserBrands.tsx -> react-slick",
+    "files": [
+      "static/chunks/node_modules_288834._.js",
+      "static/chunks/node_modules_react-slick_lib_index_a654d6.js"
+    ]
+  },
+  "components/Brands_home/AllBrands.jsx -> react-slick": {
+    "id": "components/Brands_home/AllBrands.jsx -> react-slick",
+    "files": [
+      "static/chunks/node_modules_288834._.js",
+      "static/chunks/node_modules_react-slick_lib_index_a654d6.js"
+    ]
+  }
+}

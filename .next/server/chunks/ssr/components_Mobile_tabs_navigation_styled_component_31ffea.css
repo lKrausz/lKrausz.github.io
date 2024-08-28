@@ -1,0 +1,48 @@
+/* [project]/components/Mobile_tabs_navigation/styled.component.css [app-ssr] (css) */
+.bg-mob-header {
+  background-image: linear-gradient(76deg, #9d4eb3 7%, #6c37b1 35.92%, #310877 85.69%);
+  position: relative;
+  filter: drop-shadow(0 4px 30px #d180ee33);
+  border-top: 2px solid #fff6;
+  border-bottom: 2px solid #fff6;
+  border-radius: 30px 30px 0 0 !important;
+}
+
+.bg-mob-header svg {
+  color: #ff8f1f;
+}
+
+.round-logo {
+  background: #ff8f1f;
+  border: 3px solid #fff;
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  .round-logo {
+    position: absolute;
+    z-index: -1;
+    background-image: linear-gradient(76deg, #9d4eb3 7%, #6c37b1 35.92%, #310877 85.69%);
+    border: 2px solid #fff6;
+    width: 10rem !important;
+    height: 10rem !important;
+  }
+
+  .minilogos {
+    position: relative;
+  }
+
+  .minilogos img {
+  }
+
+  .minilogos:after {
+    content: "";
+    width: 102px;
+    height: 2px;
+    position: absolute;
+    top: -6px;
+    left: -17px;
+    background: linear-gradient(to right, #7a00ac, #7a00ac);
+  }
+}
+
+/*# sourceMappingURL=components_Mobile_tabs_navigation_styled_component_31ffea.css.map*/

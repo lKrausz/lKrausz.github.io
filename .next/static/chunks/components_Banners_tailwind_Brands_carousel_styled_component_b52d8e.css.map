@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["[project]/components/Banners_tailwind/Brands_carousel/styled.component.css"],"sourcesContent":[".brand_carousel .slick-dots li.slick-active button:before {\r\n  color: #4f46e5 !important;\r\n}\r\n\r\n.brand_carousel .slick-dots li button:before {\r\n  font-size: 12px;\r\n}\r\n.slick-list {\r\n  overflow: hidden;\r\n}\r\n.btn-play {\r\n  border-radius: 0px 0px 30px 30px;\r\n  background: #ff8f1f;\r\n  box-shadow: 0px -5px 30px 0px rgba(255, 143, 31, 0.3);\r\n  padding: 12px 0;\r\n  width: 100%;\r\n  line-height: 20px;\r\n  font-size: 14px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  color: #fff;\r\n  font-weight: 600;\r\n  margin-top: 10px;\r\n}\r\n.card-sl {\r\n  border: 2px rgba(255, 255, 255, 0.3) solid;\r\n  border-radius: 32px;\r\n  padding-top: 10px;\r\n}\r\n.card-sl > div > .mt-3 {\r\n  display: flex;\r\n  padding: 0 10px;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;AAIA;;;;AAGA;;;;AAGA;;;;;;;;;;;;;;;;AAeA;;;;;;AAKA"}},
+    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
